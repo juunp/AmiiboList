@@ -1,0 +1,401 @@
+[
+    {
+        "name": "Mario",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "28/11/2014",
+        "out": true
+    },
+    {
+        "name": "Samus",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "28/11/2014",
+        "out": true
+    },
+    {
+        "name": "Kirby",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "28/11/2014",
+        "out": true
+    },
+    {
+        "name": "Villageois",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "28/11/2014",
+        "out": true
+    },
+    {
+        "name": "Samus",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "28/11/2014",
+        "out": true
+    },
+    {
+        "name": "Pikachu",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "28/11/2014",
+        "out": true
+    },
+    {
+        "name": "Marth",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "28/11/2014",
+        "out": true
+    },
+    {
+        "name": "Entraîneuse Wii Fit",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "28/11/2014",
+        "out": true
+    },
+    {
+        "name": "Yoshi",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "28/11/2014",
+        "out": true
+    },
+    {
+        "name": "Fox",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "28/11/2014",
+        "out": true
+    },
+    {
+        "name": "Donkey Kong",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "28/11/2014",
+        "out": true
+    },
+    {
+        "name": "Peach",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "28/11/2014",
+        "out": true
+    },
+    {
+        "name": "Link",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "28/11/2014",
+        "out": true
+    },
+    {
+        "name": "Captain Falcon",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "19/12/2014",
+        "out": true
+    },
+    {
+        "name": "Little Mac",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "19/12/2014",
+        "out": true
+    },
+    {
+        "name": "Zelda",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "19/12/2014",
+        "out": true
+    },
+    {
+        "name": "Diddy Kong",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "19/12/2014",
+        "out": true
+    },
+    {
+        "name": "Luigi",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "19/12/2014",
+        "out": true
+    },
+    {
+        "name": "Pit",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "19/12/2014",
+        "out": true
+    },
+    {
+        "name": "Harmonie & Luma",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "23/01/2015",
+        "out": true
+    },
+    {
+        "name": "Bowser",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "23/01/2015",
+        "out": true
+    },
+    {
+        "name": "Lucario",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "23/01/2015",
+        "out": true
+    },
+    {
+        "name": "Link Cartoon",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "23/01/2015",
+        "out": true
+    },
+    {
+        "name": "Sheik",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "23/01/2015",
+        "out": true
+    },
+    {
+        "name": "Ike",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "23/01/2015",
+        "out": true
+    },
+    {
+        "name": "Shulk",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "20/02/2015",
+        "out": true
+    },
+    {
+        "name": "Sonic",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "20/02/2015",
+        "out": true
+    },
+    {
+        "name": "Megaman",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "20/02/2015",
+        "out": true
+    },
+    {
+        "name": "Roi Dadidou",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "20/02/2015",
+        "out": true
+    },
+    {
+        "name": "Meta Knight",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "20/02/2015",
+        "out": true
+    },
+    {
+        "name": "Daraen",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "24/04/2015",
+        "out": true
+    },
+    {
+        "name": "Lucina",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "24/04/2015",
+        "out": true
+    },
+    {
+        "name": "Wario",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "24/04/2015",
+        "out": true
+    },
+    {
+        "name": "Dracaufeu",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "24/04/2015",
+        "out": true
+    },
+    {
+        "name": "Ness",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "24/04/2015",
+        "out": true
+    },
+    {
+        "name": "PAC-MAN",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "24/04/2015",
+        "out": true
+    },
+    {
+        "name": "Amphinobi",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "29/05/2015",
+        "out": true
+    },
+    {
+        "name": "Rondoudou",
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "29/05/2015",
+        "out": true
+    },
+    {
+        "name": "Fille Inkling",
+        "serie": "Splatoon",
+        "serie_acronym": "splatoon",
+        "sellingDate": "29/05/2015",
+        "out": true
+    },
+    {
+        "name": "Garéon Inklinkg",
+        "serie": "Splatoon",
+        "serie_acronym": "splatoon",
+        "sellingDate": "29/05/2015",
+        "out": true
+    },
+    {
+        "name": "Calamar Inkling",
+        "serie": "Splatoon",
+        "serie_acronym": "splatoon",
+        "sellingDate": "29/05/2015",
+        "out": true
+    },
+    {
+        "name": "Mario",
+        "serie": "Série Super Mario",
+        "serie_acronym": "super_mario",
+        "sellingDate": "20/03/2015",
+        "out": true
+    },
+    {
+        "name": "Luigi",
+        "serie": "Série Super Mario",
+        "serie_acronym": "super_mario",
+        "sellingDate": "20/03/2015",
+        "out": true
+    },
+    {
+        "name": "Peach",
+        "serie": "Série Super Mario",
+        "serie_acronym": "super_mario",
+        "sellingDate": "20/03/2015",
+        "out": true
+    },
+    {
+        "name": "Yoshi",
+        "serie": "Série Super Mario",
+        "serie_acronym": "super_mario",
+        "sellingDate": "20/03/2015",
+        "out": true
+    },
+    {
+        "name": "Toad",
+        "serie": "Série Super Mario",
+        "serie_acronym": "super_mario",
+        "sellingDate": "20/03/2015",
+        "out": true
+    },
+    {
+        "name": "Bowser",
+        "serie": "Série Super Mario",
+        "serie_acronym": "super_mario",
+        "sellingDate": "20/03/2015",
+        "out": true
+    },
+    {
+        "name": "Ganondorf",
+        "serie": "Série Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "20/06/2015",
+        "out": true
+    },
+    {
+        "name": "Samus sans armure",
+        "serie": "Série Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "20/06/2015",
+        "out": true
+    },
+    {
+        "name": "Pit Maléfique",
+        "serie": "Série Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "20/06/2015",
+        "out": true
+    },
+    {
+        "name": "Palutena",
+        "serie": "Série Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "20/06/2015",
+        "out": true
+    },
+    {
+        "name": "Bowser. Jr",
+        "serie": "Série Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "juillet",
+        "out": false
+    },
+    {
+        "name": "Dr. Mario",
+        "serie": "Série Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "juillet",
+        "out": false
+    },
+    {
+        "name": "Olimar",
+        "serie": "Série Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "juillet",
+        "out": false
+    },
+    {
+        "name": "Yoshi de laine vert",
+        "serie": "Série Yoshi\"s Woolly World",
+        "serie_acronym": "yww",
+        "sellingDate": "26/06/2015",
+        "out": true
+    },
+    {
+        "name": "Yoshi de laine bleu",
+        "serie": "Série Yoshi\"s Woolly World",
+        "serie_acronym": "yww",
+        "sellingDate": "26/06/2015",
+        "out": true
+    },
+    {
+        "name": "Yoshi de laine rose",
+        "serie": "Série Yoshi\"s Woolly World",
+        "serie_acronym": "yww",
+        "sellingDate": "26/06/2015",
+        "out": true
+    }
+]
