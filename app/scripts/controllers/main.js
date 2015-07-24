@@ -8,10 +8,17 @@
  * Controller of the amiiboListApp
  */
 angular.module('amiiboListApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+  .controller('MainCtrl', function ($scope, listService) {
+    $scope.options = [
+      'non recherché',
+      'peut-être plus tard',
+      'recherché',
+      'obtenu'
     ];
+    listService.getAmiiboList()
+        .query()
+        .$promise
+        .then(function(res) {
+          $scope.amiibo = res;
+        });;
   });
