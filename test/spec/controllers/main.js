@@ -34,7 +34,23 @@ describe('Controller: MainCtrl', function () {
   }));
   
   
-    it('should have options as an array of 4 elements', function(){
-        expect($scope.options.length).toBe(4)
+    it('should have options as an array of 5 elements at first', function(){
+        expect($scope.options.length).toBe(5)
+    });
+    
+    it('should have filter_series as null at first', function(){
+        expect($scope.filter_serie).toBeNull();
+    });
+    
+    it('should have series to be an array of 0 elements at first', function(){
+        expect($scope.series.length).toBe(0);
+    });
+    
+    it('should have search to be an empty string at first', function(){
+        expect($scope.search).toBe('');
+    });
+    
+    it('should have orderBy to be an empty string at first', function(){
+        expect($scope.orderBy).toBe('');
     });
 });

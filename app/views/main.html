@@ -1,5 +1,17 @@
 <div>
     <form class="form-horizontal table-responsive">
+        <div>
+            <select class="form-control" ng-model="filter_serie">
+                <option ng-repeat="o in series" value="{{o.id}}">{{o.name}}</option>
+            </select>
+            <input class="form-control" ng-model="search"/>
+            <select class="form-control" ng-model="orderBy">
+                <option id="sellingDate">Date de sortie</option>
+                <option id="name">Nom</option>
+                <option id="number">Numéro</option>
+                <option id="state">Statut</option>
+            </select>
+        </div>
         <table class="table-striped">
             <thead>
                 <tr>
@@ -11,14 +23,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="e in amiibo | orderBy: 'e.number'">
-                    <td>{{e.number.length == 1 ? '0' + e.number: e.number}}</td>
+                <tr ng-repeat="e in amiibo | orderBy: e.sellingDate">
+                    <td>{{e.number}}</td>
                     <td><label class="label">{{e.name}}</label></td>
-                    <td></td>
+                    <td><img ng-src="images/amiibo/{{e.serie_acronym}}/{{e.name | sluggifier}}.jpg" width="45" height="51"/></td>
                     <td>{{e.sellingDate}}</td>
-                    <td ng-if="e.out">
+                    <td>
                         <select>
-                            <option ng-repeat="o in options" value={{$index}}">{{o}}</option>
+                            <option ng-repeat="o in options" value={{$index}}"  ng-if="$index <= 2 || e.out">{{o}}</option>
                         </select>
                     </td>
                 </tr>

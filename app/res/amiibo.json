@@ -8,48 +8,8 @@
         "out": true
     },
     {
-        "name": "Kirby",
-        "number": 11,
-        "serie": "Série de Super Smash Bros.",
-        "serie_acronym": "ssb",
-        "sellingDate": "28/11/2014",
-        "out": true
-    },
-    {
-        "name": "Villageois",
-        "number": 9,
-        "serie": "Série de Super Smash Bros.",
-        "serie_acronym": "ssb",
-        "sellingDate": "28/11/2014",
-        "out": true
-    },
-    {
-        "name": "Samus",
-        "number": 7,
-        "serie": "Série de Super Smash Bros.",
-        "serie_acronym": "ssb",
-        "sellingDate": "28/11/2014",
-        "out": true
-    },
-    {
-        "name": "Pikachu",
-        "number": 10,
-        "serie": "Série de Super Smash Bros.",
-        "serie_acronym": "ssb",
-        "sellingDate": "28/11/2014",
-        "out": true
-    },
-    {
-        "name": "Marth",
-        "number": 12,
-        "serie": "Série de Super Smash Bros.",
-        "serie_acronym": "ssb",
-        "sellingDate": "28/11/2014",
-        "out": true
-    },
-    {
-        "name": "Entraîneuse Wii Fit",
-        "number": 8,
+        "name": "Peach",
+        "number": 2,
         "serie": "Série de Super Smash Bros.",
         "serie_acronym": "ssb",
         "sellingDate": "28/11/2014",
@@ -64,24 +24,8 @@
         "out": true
     },
     {
-        "name": "Fox",
-        "number": 6,
-        "serie": "Série de Super Smash Bros.",
-        "serie_acronym": "ssb",
-        "sellingDate": "28/11/2014",
-        "out": true
-    },
-    {
         "name": "Donkey Kong",
         "number": 4,
-        "serie": "Série de Super Smash Bros.",
-        "serie_acronym": "ssb",
-        "sellingDate": "28/11/2014",
-        "out": true
-    },
-    {
-        "name": "Peach",
-        "number": 2,
         "serie": "Série de Super Smash Bros.",
         "serie_acronym": "ssb",
         "sellingDate": "28/11/2014",
@@ -96,19 +40,59 @@
         "out": true
     },
     {
-        "name": "Captain Falcon",
-        "number": 18,
+        "name": "Fox",
+        "number": 6,
         "serie": "Série de Super Smash Bros.",
         "serie_acronym": "ssb",
-        "sellingDate": "19/12/2014",
+        "sellingDate": "28/11/2014",
         "out": true
     },
     {
-        "name": "Little Mac",
-        "number": 16,
+        "name": "Samus",
+        "number": 7,
         "serie": "Série de Super Smash Bros.",
         "serie_acronym": "ssb",
-        "sellingDate": "19/12/2014",
+        "sellingDate": "28/11/2014",
+        "out": true
+    },
+    {
+        "name": "Entraîneuse Wii Fit",
+        "number": 8,
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "28/11/2014",
+        "out": true
+    },
+    {
+        "name": "Villageois",
+        "number": 9,
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "28/11/2014",
+        "out": true
+    },
+    {
+        "name": "Pikachu",
+        "number": 10,
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "28/11/2014",
+        "out": true
+    },
+    {
+        "name": "Kirby",
+        "number": 11,
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "28/11/2014",
+        "out": true
+    },
+    {
+        "name": "Marth",
+        "number": 12,
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "28/11/2014",
         "out": true
     },
     {
@@ -136,8 +120,24 @@
         "out": true
     },
     {
+        "name": "Little Mac",
+        "number": 16,
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "19/12/2014",
+        "out": true
+    },
+    {
         "name": "Pit",
         "number": 17,
+        "serie": "Série de Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "19/12/2014",
+        "out": true
+    },
+    {
+        "name": "Captain Falcon",
+        "number": 18,
         "serie": "Série de Super Smash Bros.",
         "serie_acronym": "ssb",
         "sellingDate": "19/12/2014",
@@ -297,13 +297,15 @@
     },
     {
         "name": "Fille Inkling",
+        "number": null,
         "serie": "Splatoon",
         "serie_acronym": "splatoon",
         "sellingDate": "29/05/2015",
         "out": true
     },
     {
-        "name": "Garçon Inklinkg",
+        "name": "Garçon Inkling",
+        "number": null,
         "serie": "Splatoon",
         "serie_acronym": "splatoon",
         "sellingDate": "29/05/2015",
@@ -311,6 +313,7 @@
     },
     {
         "name": "Calamar Inkling",
+        "number": null,
         "serie": "Splatoon",
         "serie_acronym": "splatoon",
         "sellingDate": "29/05/2015",
@@ -318,6 +321,7 @@
     },
     {
         "name": "Mario",
+        "number": null,
         "serie": "Série Super Mario",
         "serie_acronym": "super_mario",
         "sellingDate": "20/03/2015",
@@ -325,6 +329,7 @@
     },
     {
         "name": "Luigi",
+        "number": null,
         "serie": "Série Super Mario",
         "serie_acronym": "super_mario",
         "sellingDate": "20/03/2015",
@@ -332,6 +337,7 @@
     },
     {
         "name": "Peach",
+        "number": null,
         "serie": "Série Super Mario",
         "serie_acronym": "super_mario",
         "sellingDate": "20/03/2015",
@@ -339,6 +345,7 @@
     },
     {
         "name": "Yoshi",
+        "number": null,
         "serie": "Série Super Mario",
         "serie_acronym": "super_mario",
         "sellingDate": "20/03/2015",
@@ -346,6 +353,7 @@
     },
     {
         "name": "Toad",
+        "number": null,
         "serie": "Série Super Mario",
         "serie_acronym": "super_mario",
         "sellingDate": "20/03/2015",
@@ -353,22 +361,15 @@
     },
     {
         "name": "Bowser",
+        "number": null,
         "serie": "Série Super Mario",
         "serie_acronym": "super_mario",
         "sellingDate": "20/03/2015",
         "out": true
     },
     {
-        "name": "Ganondorf",
-        "number": 41,
-        "serie": "Série Super Smash Bros.",
-        "serie_acronym": "ssb",
-        "sellingDate": "20/06/2015",
-        "out": true
-    },
-    {
-        "name": "Samus sans armure",
-        "number": 40,
+        "name": "Palutena",
+        "number": 38,
         "serie": "Série Super Smash Bros.",
         "serie_acronym": "ssb",
         "sellingDate": "20/06/2015",
@@ -383,24 +384,32 @@
         "out": true
     },
     {
-        "name": "Palutena",
-        "number": 38,
+        "name": "Samus sans armure",
+        "number": 40,
         "serie": "Série Super Smash Bros.",
         "serie_acronym": "ssb",
         "sellingDate": "20/06/2015",
         "out": true
     },
     {
-        "name": "Bowser. Jr",
-        "number": 43,
+        "name": "Ganondorf",
+        "number": 41,
+        "serie": "Série Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "20/06/2015",
+        "out": true
+    },
+    {
+        "name": "Dr. Mario",
+        "number": 42,
         "serie": "Série Super Smash Bros.",
         "serie_acronym": "ssb",
         "sellingDate": "17/07/2015",
         "out": true
     },
     {
-        "name": "Dr. Mario",
-        "number": 42,
+        "name": "Bowser. Jr",
+        "number": 43,
         "serie": "Série Super Smash Bros.",
         "serie_acronym": "ssb",
         "sellingDate": "17/07/2015",
@@ -416,6 +425,7 @@
     },
     {
         "name": "Yoshi de laine vert",
+        "number": null,
         "serie": "Série Yoshi\"s Woolly World",
         "serie_acronym": "yww",
         "sellingDate": "26/06/2015",
@@ -423,6 +433,7 @@
     },
     {
         "name": "Yoshi de laine bleu ciel",
+        "number": null,
         "serie": "Série Yoshi\"s Woolly World",
         "serie_acronym": "yww",
         "sellingDate": "26/06/2015",
@@ -430,6 +441,7 @@
     },
     {
         "name": "Yoshi de laine rose",
+        "number": null,
         "serie": "Série Yoshi\"s Woolly World",
         "serie_acronym": "yww",
         "sellingDate": "26/06/2015",
@@ -444,14 +456,6 @@
         "out": false
     },
     {
-        "name": "Duo Duck Hunt",
-        "number": 47,
-        "serie": "Série Super Smash Bros.",
-        "serie_acronym": "ssb",
-        "sellingDate": "25/09/2015",
-        "out": false
-    },
-    {
         "name": "Mr. Game & Watch",
         "number": 45,
         "serie": "Série Super Smash Bros.",
@@ -460,16 +464,8 @@
         "out": false
     },
     {
-        "name": "Tireuse Mii",
-        "number": 50,
-        "serie": "Série Super Smash Bros.",
-        "serie_acronym": "ssb",
-        "sellingDate": "25/09/2015",
-        "out": false
-    },
-    {
-        "name": "Épéiste Mii",
-        "number": 49,
+        "name": "Duo Duck Hunt",
+        "number": 47,
         "serie": "Série Super Smash Bros.",
         "serie_acronym": "ssb",
         "sellingDate": "25/09/2015",
@@ -484,7 +480,24 @@
         "out": false
     },
     {
+        "name": "Épéiste Mii",
+        "number": 49,
+        "serie": "Série Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "25/09/2015",
+        "out": false
+    },
+    {
+        "name": "Tireuse Mii",
+        "number": 50,
+        "serie": "Série Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "25/09/2015",
+        "out": false
+    },
+    {
         "name": "Mario (couleurs classiques)",
+        "number": null,
         "serie": "Série Mario 30th Anniversary",
         "serie_acronym": "mario_30th_bday",
         "sellingDate": "11/09/2015",
@@ -492,6 +505,7 @@
     },
     {
         "name": "Mario (couleurs modernes)",
+        "number": null,
         "serie": "Série Mario 30th Anniversary",
         "serie_acronym": "mario_30th_bday",
         "sellingDate": "11/09/2015",
@@ -499,6 +513,7 @@
     },
     {
         "name": "Chibi-Robo",
+        "number": null,
         "serie": "Série Chibi-Robo",
         "serie_acronym": "crc",
         "sellingDate": "Novembre 2015",
@@ -506,6 +521,7 @@
     },
     {
         "name": "Serge",
+        "number": null,
         "serie": "Série Animal Crossing",
         "serie_acronym": "acc",
         "sellingDate": "4ème trimestre 2015",
@@ -513,6 +529,7 @@
     },
     {
         "name": "Risette",
+        "number": null,
         "serie": "Série Animal Crossing",
         "serie_acronym": "acc",
         "sellingDate": "4ème trimestre 2015",
@@ -520,6 +537,7 @@
     },
     {
         "name": "Lou",
+        "number": null,
         "serie": "Série Animal Crossing",
         "serie_acronym": "acc",
         "sellingDate": "4ème trimestre 2015",
@@ -527,6 +545,7 @@
     },
     {
         "name": "Max",
+        "number": null,
         "serie": "Série Animal Crossing",
         "serie_acronym": "acc",
         "sellingDate": "4ème trimestre 2015",
@@ -534,6 +553,7 @@
     },
     {
         "name": "Tom Nook",
+        "number": null,
         "serie": "Série Animal Crossing",
         "serie_acronym": "acc",
         "sellingDate": "4ème trimestre 2015",
@@ -541,6 +561,7 @@
     },
     {
         "name": "Layette",
+        "number": null,
         "serie": "Série Animal Crossing",
         "serie_acronym": "acc",
         "sellingDate": "4ème trimestre 2015",
@@ -548,6 +569,7 @@
     },
     {
         "name": "Kéké",
+        "number": null,
         "serie": "Série Animal Crossing",
         "serie_acronym": "acc",
         "sellingDate": "4ème trimestre 2015",
@@ -555,6 +577,7 @@
     },
     {
         "name": "Marie",
+        "number": null,
         "serie": "Série Animal Crossing",
         "serie_acronym": "acc",
         "sellingDate": "4ème trimestre 2015",

@@ -16,7 +16,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'txx.diacritics'
   ])
   .config(function ($routeProvider) {
     $routeProvider
