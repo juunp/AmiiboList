@@ -12,6 +12,11 @@
                 <option value="number">Numéro</option>
                 <option value="state">Statut</option>
             </select>
+            <div class="form-group">
+                <label class="form-label">Sens?</label>
+            <input type="checkbox" class="form-control" ng-model="way">
+            </input>
+            </div>
         </div>
         <table class="table-striped">
             <thead>
@@ -24,7 +29,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="e in amiibo | filter: {serie_acronym: filter_serie} | filter: search | orderBy: orderBy ">
+                <tr ng-repeat="e in amiibo | filter: {serie_acronym: filter_serie} | filter: search | orderBy: orderBy : way">
                     <td>{{e.number}}</td>
                     <td><label class="label">{{e.name}}</label></td>
                     <td><img ng-src="images/amiibo/{{e.serie_acronym}}/{{e.name | sluggifier}}.jpg" width="45" height="51"/></td>

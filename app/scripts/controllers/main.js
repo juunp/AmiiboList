@@ -21,6 +21,7 @@ angular.module('amiiboListApp')
     $scope.series = [];
     $scope.search = '';
     $scope.orderBy = '';
+    $scope.way = false;
     
     listService.getAmiiboList()
         .$promise

@@ -73,6 +73,10 @@ describe('Controller: MainCtrl', function () {
         expect($scope.orderBy).toBe('');
     });
     
+    it('should have way to be false', function(){
+        expect($scope.way).toBe(false);
+    })
+    
     describe('ListService.query', function(){
         beforeEach(function(){
             queryDeferred.resolve(mockListResponse);
