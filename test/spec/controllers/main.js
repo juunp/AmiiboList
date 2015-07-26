@@ -57,8 +57,8 @@ describe('Controller: MainCtrl', function () {
         expect($scope.options.length).toBe(5)
     });
     
-    it('should have filter_series as null at first', function(){
-        expect($scope.filter_serie).toBeNull();
+    it('should have filter_series as empty string at first', function(){
+        expect($scope.filter_serie).toBe('');
     });
     
     it('should have series to be an array of 0 elements at first', function(){

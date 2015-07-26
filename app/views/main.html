@@ -2,14 +2,15 @@
     <form class="form-horizontal table-responsive">
         <div>
             <select class="form-control" ng-model="filter_serie">
+                <option value="">Tous</option>
                 <option ng-repeat="o in series" value="{{o.id}}">{{o.name}}</option>
             </select>
             <input class="form-control" ng-model="search"/>
             <select class="form-control" ng-model="orderBy">
-                <option id="sellingDate">Date de sortie</option>
-                <option id="name">Nom</option>
-                <option id="number">Numéro</option>
-                <option id="state">Statut</option>
+                <option value="sellingDate">Date de sortie</option>
+                <option value="name">Nom</option>
+                <option value="number">Numéro</option>
+                <option value="state">Statut</option>
             </select>
         </div>
         <table class="table-striped">
@@ -23,7 +24,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="e in amiibo | orderBy: e.sellingDate">
+                <tr ng-repeat="e in amiibo | filter: {serie_acronym: filter_serie} | filter: search | orderBy: orderBy ">
                     <td>{{e.number}}</td>
                     <td><label class="label">{{e.name}}</label></td>
                     <td><img ng-src="images/amiibo/{{e.serie_acronym}}/{{e.name | sluggifier}}.jpg" width="45" height="51"/></td>

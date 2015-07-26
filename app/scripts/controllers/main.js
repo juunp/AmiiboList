@@ -17,7 +17,7 @@ angular.module('amiiboListApp')
       'obtenu'
     ];
     
-    $scope.filter_serie = null;
+    $scope.filter_serie = '';
     $scope.series = [];
     $scope.search = '';
     $scope.orderBy = '';
