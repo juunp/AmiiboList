@@ -12,7 +12,7 @@ angular.module('amiiboListApp')
     // AngularJS will instantiate a singleton by calling "new" on this function
       return {
         getAmiiboList: function(){
-            return $resource('res/amiibo.json');
+            return $resource('res/amiibo.json').query();
         }  
       };
   });

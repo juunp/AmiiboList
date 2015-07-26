@@ -23,7 +23,6 @@ angular.module('amiiboListApp')
     $scope.orderBy = '';
     
     listService.getAmiiboList()
-        .query()
         .$promise
         .then(function(res) {
           $scope.amiibo = res;

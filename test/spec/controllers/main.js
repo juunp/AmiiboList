@@ -3,8 +3,27 @@
 describe('Controller: MainCtrl', function () {
   // load the controller's module
 
-  var MainCtrl, $q, mockListService, mockListResponse, $rootScope, $scope;
-  
+  var $q,
+      mockListService,
+      $rootScope,
+      $scope,
+      queryDeferred,
+      mockListResponse = [{
+        "name": "Marie",
+        "number": null,
+        "serie": "Série Animal Crossing",
+        "serie_acronym": "acc",
+        "sellingDate": "4ème trimestre 2015",
+        "out": false
+    },
+    {
+        "name": "Falco",
+        "number": 52,
+        "serie": "Série Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "inconnue",
+        "out": false
+    }];
   beforeEach(module('amiiboListApp'));
 
   // Initialize the controller and a mock scope
@@ -17,19 +36,19 @@ describe('Controller: MainCtrl', function () {
     $scope = $rootScope.$new();
       
     mockListService = {
-        query: function() {
+        getAmiiboList: function() {
           queryDeferred = $q.defer();
           return {$promise: queryDeferred.promise};
         }
     };
     
-    spyOn(mockListService, 'query').and.callThrough();
+    spyOn(mockListService, 'getAmiiboList').and.callThrough();
     
     
-    MainCtrl = $controller('MainCtrl', {
+    $controller('MainCtrl', {
       // place here mocked dependencies
       '$scope': $scope,
-      'mockService1': mockListService
+      'listService': mockListService
     });
   }));
   
@@ -53,4 +72,23 @@ describe('Controller: MainCtrl', function () {
     it('should have orderBy to be an empty string at first', function(){
         expect($scope.orderBy).toBe('');
     });
+    
+    describe('ListService.query', function(){
+        beforeEach(function(){
+            queryDeferred.resolve(mockListResponse);
+            $rootScope.$apply();
+        });
+        
+        it('should query the listService', function(){
+            expect(mockListService.getAmiiboList).toHaveBeenCalled();
+        });
+        
+        it('should set the response from the listService to $scope.amiibo', function(){
+            expect($scope.amiibo).toEqual(mockListResponse);
+        });
+        
+        it('should set $scope.series to be populated', function(){
+            expect($scope.series.length).not.toBe(0);
+        })
+    })
 });
