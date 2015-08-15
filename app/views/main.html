@@ -32,7 +32,7 @@
                 <tr ng-repeat="e in amiibo | filter: {serie_acronym: filter_serie} | filter: search | orderBy: orderBy : way">
                     <td>{{e.number}}</td>
                     <td><label class="label">{{e.name}}</label></td>
-                    <td><img ng-src="images/amiibo/{{e.serie_acronym}}/{{e.name | sluggifier}}.jpg" width="45" height="51"/></td>
+                    <td><img ng-src="images/amiibo/{{e.serie_acronym}}/{{e.name | sluggifier}}.jpg" width="145" height="151"/></td>
                     <td>{{e.sellingDate}}</td>
                     <td>
                         <select>

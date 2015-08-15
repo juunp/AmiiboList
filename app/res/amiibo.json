@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "name": "Mario",
         "number": 1,
         "serie": "Série de Super Smash Bros.",
@@ -8,6 +9,7 @@
         "out": true
     },
     {
+        "id": 2,
         "name": "Peach",
         "number": 2,
         "serie": "Série de Super Smash Bros.",
@@ -16,6 +18,7 @@
         "out": true
     },
     {
+        "id": 3,
         "name": "Yoshi",        
         "number": 3,
         "serie": "Série de Super Smash Bros.",
@@ -24,6 +27,7 @@
         "out": true
     },
     {
+        "id": 4,
         "name": "Donkey Kong",
         "number": 4,
         "serie": "Série de Super Smash Bros.",
@@ -32,6 +36,7 @@
         "out": true
     },
     {
+        "id": 5,
         "name": "Link",
         "number": 5,
         "serie": "Série de Super Smash Bros.",
@@ -40,6 +45,7 @@
         "out": true
     },
     {
+        "id": 6,
         "name": "Fox",
         "number": 6,
         "serie": "Série de Super Smash Bros.",
@@ -48,6 +54,7 @@
         "out": true
     },
     {
+        "id": 7,
         "name": "Samus",
         "number": 7,
         "serie": "Série de Super Smash Bros.",
@@ -56,6 +63,7 @@
         "out": true
     },
     {
+        "id": 8,
         "name": "Entraîneuse Wii Fit",
         "number": 8,
         "serie": "Série de Super Smash Bros.",
@@ -64,6 +72,7 @@
         "out": true
     },
     {
+        "id": 9,
         "name": "Villageois",
         "number": 9,
         "serie": "Série de Super Smash Bros.",
@@ -72,6 +81,7 @@
         "out": true
     },
     {
+        "id": 10,
         "name": "Pikachu",
         "number": 10,
         "serie": "Série de Super Smash Bros.",
@@ -80,6 +90,7 @@
         "out": true
     },
     {
+        "id": 11,
         "name": "Kirby",
         "number": 11,
         "serie": "Série de Super Smash Bros.",
@@ -88,6 +99,7 @@
         "out": true
     },
     {
+        "id": 12,
         "name": "Marth",
         "number": 12,
         "serie": "Série de Super Smash Bros.",
@@ -96,6 +108,7 @@
         "out": true
     },
     {
+        "id": 13,
         "name": "Zelda",
         "number": 13,
         "serie": "Série de Super Smash Bros.",
@@ -104,6 +117,7 @@
         "out": true
     },
     {
+        "id": 14,
         "name": "Diddy Kong",
         "number": 14,
         "serie": "Série de Super Smash Bros.",
@@ -112,6 +126,7 @@
         "out": true
     },
     {
+        "id": 15,
         "name": "Luigi",
         "number": 15,
         "serie": "Série de Super Smash Bros.",
@@ -120,6 +135,7 @@
         "out": true
     },
     {
+        "id": 16,
         "name": "Little Mac",
         "number": 16,
         "serie": "Série de Super Smash Bros.",
@@ -128,6 +144,7 @@
         "out": true
     },
     {
+        "id": 17,
         "name": "Pit",
         "number": 17,
         "serie": "Série de Super Smash Bros.",
@@ -136,6 +153,7 @@
         "out": true
     },
     {
+        "id": 18,
         "name": "Captain Falcon",
         "number": 18,
         "serie": "Série de Super Smash Bros.",
@@ -144,6 +162,7 @@
         "out": true
     },
     {
+        "id": 19,
         "name": "Harmonie & Luma",
         "number": 19,
         "serie": "Série de Super Smash Bros.",
@@ -152,6 +171,7 @@
         "out": true
     },
     {
+        "id": 20,
         "name": "Bowser",
         "number": 20,
         "serie": "Série de Super Smash Bros.",
@@ -160,6 +180,7 @@
         "out": true
     },
     {
+        "id": 21,
         "name": "Lucario",
         "number": 21,
         "serie": "Série de Super Smash Bros.",
@@ -168,6 +189,7 @@
         "out": true
     },
     {
+        "id": 22,
         "name": "Link Cartoon",
         "number": 22,
         "serie": "Série de Super Smash Bros.",
@@ -176,6 +198,7 @@
         "out": true
     },
     {
+        "id": 23,
         "name": "Sheik",
         "number": 23,
         "serie": "Série de Super Smash Bros.",
@@ -184,6 +207,7 @@
         "out": true
     },
     {
+        "id": 24,
         "name": "Ike",
         "number": 24,
         "serie": "Série de Super Smash Bros.",
@@ -192,6 +216,7 @@
         "out": true
     },
     {
+        "id": 25,
         "name": "Shulk",
         "number": 25,
         "serie": "Série de Super Smash Bros.",
@@ -200,6 +225,7 @@
         "out": true
     },
     {
+        "id": 26,
         "name": "Sonic",
         "number": 26,
         "serie": "Série de Super Smash Bros.",
@@ -208,6 +234,7 @@
         "out": true
     },
     {
+        "id": 27,
         "name": "Megaman",
         "number": 27,
         "serie": "Série de Super Smash Bros.",
@@ -216,6 +243,7 @@
         "out": true
     },
     {
+        "id": 28,
         "name": "Roi Dadidou",
         "number": 28,
         "serie": "Série de Super Smash Bros.",
@@ -224,6 +252,7 @@
         "out": true
     },
     {
+        "id": 29,
         "name": "Meta Knight",
         "number": 29,
         "serie": "Série de Super Smash Bros.",
@@ -232,6 +261,7 @@
         "out": true
     },
     {
+        "id": 30,
         "name": "Daraen",
         "number": 30,
         "serie": "Série de Super Smash Bros.",
@@ -240,6 +270,7 @@
         "out": true
     },
     {
+        "id": 31,
         "name": "Lucina",
         "number": 31,
         "serie": "Série de Super Smash Bros.",
@@ -248,6 +279,7 @@
         "out": true
     },
     {
+        "id": 32,
         "name": "Wario",
         "number": 32,
         "serie": "Série de Super Smash Bros.",
@@ -256,6 +288,7 @@
         "out": true
     },
     {
+        "id": 33,
         "name": "Dracaufeu",
         "number": 33,
         "serie": "Série de Super Smash Bros.",
@@ -264,6 +297,7 @@
         "out": true
     },
     {
+        "id": 34,
         "name": "Ness",
         "number": 34,
         "serie": "Série de Super Smash Bros.",
@@ -272,6 +306,7 @@
         "out": true
     },
     {
+        "id": 35,
         "name": "PAC-MAN",
         "number": 35,
         "serie": "Série de Super Smash Bros.",
@@ -280,6 +315,7 @@
         "out": true
     },
     {
+        "id": 36,
         "name": "Amphinobi",
         "number": 36,
         "serie": "Série de Super Smash Bros.",
@@ -288,6 +324,7 @@
         "out": true
     },
     {
+        "id": 37,
         "name": "Rondoudou",
         "number": 37,
         "serie": "Série de Super Smash Bros.",
@@ -296,6 +333,7 @@
         "out": true
     },
     {
+        "id": 38,
         "name": "Fille Inkling",
         "number": null,
         "serie": "Splatoon",
@@ -304,6 +342,7 @@
         "out": true
     },
     {
+        "id": 39,
         "name": "Garçon Inkling",
         "number": null,
         "serie": "Splatoon",
@@ -312,6 +351,7 @@
         "out": true
     },
     {
+        "id": 40,
         "name": "Calamar Inkling",
         "number": null,
         "serie": "Splatoon",
@@ -320,6 +360,7 @@
         "out": true
     },
     {
+        "id": 41,
         "name": "Mario",
         "number": null,
         "serie": "Série Super Mario",
@@ -328,6 +369,7 @@
         "out": true
     },
     {
+        "id": 42,
         "name": "Luigi",
         "number": null,
         "serie": "Série Super Mario",
@@ -336,6 +378,7 @@
         "out": true
     },
     {
+        "id": 43,
         "name": "Peach",
         "number": null,
         "serie": "Série Super Mario",
@@ -344,6 +387,7 @@
         "out": true
     },
     {
+        "id": 44,
         "name": "Yoshi",
         "number": null,
         "serie": "Série Super Mario",
@@ -352,6 +396,7 @@
         "out": true
     },
     {
+        "id": 45,
         "name": "Toad",
         "number": null,
         "serie": "Série Super Mario",
@@ -360,6 +405,7 @@
         "out": true
     },
     {
+        "id": 46,
         "name": "Bowser",
         "number": null,
         "serie": "Série Super Mario",
@@ -368,6 +414,7 @@
         "out": true
     },
     {
+        "id": 47,
         "name": "Palutena",
         "number": 38,
         "serie": "Série Super Smash Bros.",
@@ -376,6 +423,7 @@
         "out": true
     },
     {
+        "id": 48,
         "name": "Pit Maléfique",
         "number": 39,
         "serie": "Série Super Smash Bros.",
@@ -384,6 +432,7 @@
         "out": true
     },
     {
+        "id": 49,
         "name": "Samus sans armure",
         "number": 40,
         "serie": "Série Super Smash Bros.",
@@ -392,6 +441,7 @@
         "out": true
     },
     {
+        "id": 50,
         "name": "Ganondorf",
         "number": 41,
         "serie": "Série Super Smash Bros.",
@@ -400,6 +450,7 @@
         "out": true
     },
     {
+        "id": 51,
         "name": "Dr. Mario",
         "number": 42,
         "serie": "Série Super Smash Bros.",
@@ -408,6 +459,7 @@
         "out": true
     },
     {
+        "id": 52,
         "name": "Bowser. Jr",
         "number": 43,
         "serie": "Série Super Smash Bros.",
@@ -416,6 +468,7 @@
         "out": true
     },
     {
+        "id": 53,
         "name": "Olimar",
         "number": 44,
         "serie": "Série Super Smash Bros.",
@@ -424,6 +477,7 @@
         "out": true
     },
     {
+        "id": 54,
         "name": "Yoshi de laine vert",
         "number": null,
         "serie": "Série Yoshi\"s Woolly World",
@@ -432,6 +486,7 @@
         "out": true
     },
     {
+        "id": 55,
         "name": "Yoshi de laine bleu ciel",
         "number": null,
         "serie": "Série Yoshi\"s Woolly World",
@@ -440,6 +495,7 @@
         "out": true
     },
     {
+        "id": 56,
         "name": "Yoshi de laine rose",
         "number": null,
         "serie": "Série Yoshi\"s Woolly World",
@@ -448,6 +504,7 @@
         "out": true
     },
     {
+        "id": 57,
         "name": "R.O.B.",
         "number": 46,
         "serie": "Série Super Smash Bros.",
@@ -456,6 +513,7 @@
         "out": false
     },
     {
+        "id": 58,
         "name": "Mr. Game & Watch",
         "number": 45,
         "serie": "Série Super Smash Bros.",
@@ -464,6 +522,7 @@
         "out": false
     },
     {
+        "id": 59,
         "name": "Duo Duck Hunt",
         "number": 47,
         "serie": "Série Super Smash Bros.",
@@ -472,6 +531,7 @@
         "out": false
     },
     {
+        "id": 60,
         "name": "Boxeur Mii",
         "number": 48,
         "serie": "Série Super Smash Bros.",
@@ -480,6 +540,7 @@
         "out": false
     },
     {
+        "id": 61,
         "name": "Épéiste Mii",
         "number": 49,
         "serie": "Série Super Smash Bros.",
@@ -488,6 +549,7 @@
         "out": false
     },
     {
+        "id": 62,
         "name": "Tireuse Mii",
         "number": 50,
         "serie": "Série Super Smash Bros.",
@@ -496,6 +558,7 @@
         "out": false
     },
     {
+        "id": 63,
         "name": "Mario (couleurs classiques)",
         "number": null,
         "serie": "Série Mario 30th Anniversary",
@@ -504,6 +567,7 @@
         "out": false
     },
     {
+        "id": 64,
         "name": "Mario (couleurs modernes)",
         "number": null,
         "serie": "Série Mario 30th Anniversary",
@@ -512,6 +576,7 @@
         "out": false
     },
     {
+        "id": 65,
         "name": "Chibi-Robo",
         "number": null,
         "serie": "Série Chibi-Robo",
@@ -520,6 +585,7 @@
         "out": false
     },
     {
+        "id": 66,
         "name": "Serge",
         "number": null,
         "serie": "Série Animal Crossing",
@@ -528,6 +594,7 @@
         "out": false
     },
     {
+        "id": 67,
         "name": "Risette",
         "number": null,
         "serie": "Série Animal Crossing",
@@ -536,6 +603,7 @@
         "out": false
     },
     {
+        "id": 68,
         "name": "Lou",
         "number": null,
         "serie": "Série Animal Crossing",
@@ -544,6 +612,7 @@
         "out": false
     },
     {
+        "id": 69,
         "name": "Max",
         "number": null,
         "serie": "Série Animal Crossing",
@@ -552,6 +621,7 @@
         "out": false
     },
     {
+        "id": 70,
         "name": "Tom Nook",
         "number": null,
         "serie": "Série Animal Crossing",
@@ -560,6 +630,7 @@
         "out": false
     },
     {
+        "id": 71,
         "name": "Layette",
         "number": null,
         "serie": "Série Animal Crossing",
@@ -568,6 +639,7 @@
         "out": false
     },
     {
+        "id": 72,
         "name": "Kéké",
         "number": null,
         "serie": "Série Animal Crossing",
@@ -576,6 +648,7 @@
         "out": false
     },
     {
+        "id": 73,
         "name": "Marie",
         "number": null,
         "serie": "Série Animal Crossing",
@@ -584,6 +657,7 @@
         "out": false
     },
     {
+        "id": 74,
         "name": "Falco",
         "number": 52,
         "serie": "Série Super Smash Bros.",
