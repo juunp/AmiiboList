@@ -13,7 +13,7 @@ var User = require('./models/user');
 // configuration =================
 
 var port = process.env.PORT || 8080;
-mongoose.connect(config.database);
+mongoose.connect(process.env.MONGOLAB_URI);
 app.set('superSecret', config.secret);
 
 var db = mongoose.connection;
