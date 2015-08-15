@@ -8,13 +8,12 @@ var morgan = require('morgan');             // log requests to the console (expr
 var bodyParser = require('body-parser');    // pull information from HTML POST (express4)
 var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
 var jwt = require('jsonwebtoken');
-var config = require('./config');
 var User = require('./models/user'); 
 // configuration =================
 
 var port = process.env.PORT || 8080;
 mongoose.connect(process.env.MONGOLAB_URI);
-app.set('superSecret', config.secret);
+app.set('superSecret', process.env.SECRET);
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error'));
