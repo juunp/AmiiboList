@@ -14,7 +14,9 @@ module.exports = function (grunt) {
 
   // Automatically load required Grunt tasks
   require('jit-grunt')(grunt, {
-    useminPrepare: 'grunt-usemin'
+    useminPrepare: 'grunt-usemin',
+    ngtemplates: 'grunt-angular-templates',
+    cdnify: 'grunt-google-cdn'
   });
 
   // Configurable paths for the application
@@ -201,7 +203,7 @@ module.exports = function (grunt) {
       },
       sass: {
         src: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        ignorePath: /(\.\.\/){1,2}bower_components\//
+        ignorePath: /(\.\.\/){1,3}bower_components\//
       }
     },
 
@@ -392,8 +394,9 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
-            'images/{,*/}*.{webp}',
-            'styles/fonts/{,*/}*.*'
+            'images/**/*.{png,jpg,svg}',
+            'styles/fonts/{,*/}*.*',
+            'res/*.*'
           ]
         }, {
           expand: true,

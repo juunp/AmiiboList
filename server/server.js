@@ -19,9 +19,9 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error'));
 db.once('open', function(callback){
     console.log('yeah');
-})
-    
-app.use(express.static(__dirname + '/app'));                 // set the static files location /public/img will be /img for users
+});
+
+app.use(express.static('dist'));                 // set the static files location /app/img will be /img for users
 app.use(morgan('dev'));                                         // log every request to the console
 app.use(bodyParser.urlencoded({'extended':'false'}));            // parse application/x-www-form-urlencoded
 app.use(bodyParser.json());                                     // parse application/json
@@ -34,8 +34,8 @@ app.use(methodOverride());
 // routes ================
 // =======================
 // basic route
-app.get('/', function(req, res) {
-    res.send('Hello! The API is at http://localhost:' + port + '/api');
+app.get('/index', function(req, res) {
+    res.sendfile('dist/index.html');
 });
 
 // API ROUTES -------------------
