@@ -4,6 +4,16 @@
   "main": "server/server.js",
   "author": "Judith Pivoteau",
   "devDependencies": {
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=2.13.5"
+  },
+  "scripts": {
+    "test": "grunt test",
+     "postinstall": "bower install && grunt build"
+  },
+  "dependencies": {
     "grunt-karma": "*",
     "karma-chrome-launcher": "^0.2.0",
     "karma-jasmine": "*",
@@ -33,16 +43,6 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-filerev": "^2.1.2",
     "grunt-google-cdn": "^0.4.3"
-  },
-  "engines": {
-    "node": ">=0.10.0",
-    "npm": ">=2.13.5"
-  },
-  "scripts": {
-    "test": "grunt test",
-     "postinstall": "bower install && grunt build"
-  },
-  "dependencies": {
     "express": "~4.7.2",
     "mongoose": "~3.6.2",
     "morgan": "~1.2.2",
