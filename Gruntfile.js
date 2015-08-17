@@ -203,7 +203,7 @@ module.exports = function (grunt) {
       },
       sass: {
         src: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        ignorePath: /(\.\.\/){1,3}bower_components\//
+        ignorePath: /(\.\.\/){1,2}bower_components\//
       }
     },
 
@@ -258,7 +258,7 @@ module.exports = function (grunt) {
         flow: {
           html: {
             steps: {
-              js: ['concat', 'uglifyjs'],
+              js: ['concat', 'uglify.js'],
               css: ['cssmin']
             },
             post: {}
