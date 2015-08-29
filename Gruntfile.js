@@ -495,21 +495,7 @@ module.exports = function (grunt) {
     'build'
   ]);
   
-  grunt.registerTask('heroku:production', [
-    'clean:dist',
-    'wiredep',
-    'useminPrepare',
-    'concurrent:dist',
-    'autoprefixer',
-    'ngtemplates',
-    'concat',
-    'ngAnnotate',
-    'copy:dist',
-    'cdnify',
-    'cssmin',
-    'uglify',
-    'filerev',
-    'usemin',
-    'htmlmin'
-  ]);
+  grunt.registerTask('heroku:production', function(){
+      grunt.tast.run('build:dist');
+  });
 };

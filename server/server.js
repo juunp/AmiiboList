@@ -38,7 +38,7 @@ app.get('/index', function(req, res) {
     res.sendfile('dist/index.html');
 });
 
-app.get('/log', function(req,res){
+app.get('/log/grunt', function(req,res){
     res.sendfile('grunt.log');
 })
 
