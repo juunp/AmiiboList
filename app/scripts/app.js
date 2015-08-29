@@ -1,4 +1,5 @@
-'use strict';
+(function(){
+    'use strict';
 
 /**
  * @ngdoc overview
@@ -35,3 +36,5 @@ angular
         redirectTo: '/'
       });
   });
+
+})();

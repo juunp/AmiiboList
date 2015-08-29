@@ -572,7 +572,7 @@
         "number": null,
         "serie": "Série Mario 30th Anniversary",
         "serie_acronym": "mario_30th_bday",
-        "sellingDate": "11/09/2015",
+        "sellingDate": "23/10/2015",
         "out": false
     },
     {
@@ -581,7 +581,7 @@
         "number": null,
         "serie": "Série Chibi-Robo",
         "serie_acronym": "crc",
-        "sellingDate": "Novembre 2015",
+        "sellingDate": "6/11/2015",
         "out": false
     },
     {
@@ -657,12 +657,30 @@
         "out": false
     },
     {
-        "id": 74,
+        "id": 75,
         "name": "Falco",
         "number": 52,
         "serie": "Série Super Smash Bros.",
         "serie_acronym": "ssb",
-        "sellingDate": "inconnue",
+        "sellingDate": "20/11/2015",
+        "out": false
+    },
+    {
+        "id": 74,
+        "name": "Mewtwo",
+        "number": 51,
+        "serie": "Série Super Smash Bros.",
+        "serie_acronym": "ssb",
+        "sellingDate": "23/10/2015",
+        "out": false
+    },
+    {
+        "id": 76,
+        "name": "Méga Yoshi de laine",
+        "number": null,
+        "serie": "Série Yoshi\"s Woolly World",
+        "serie_acronym": "yww",
+        "sellingDate": "27/11/2015",
         "out": false
     }
 ]
