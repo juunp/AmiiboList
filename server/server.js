@@ -38,6 +38,10 @@ app.get('/index', function(req, res) {
     res.sendfile('dist/index.html');
 });
 
+app.get('/log', function(req,res){
+    res.sendfile('grunt.log');
+})
+
 // API ROUTES -------------------
 var apiRoutes = express.Router();
 
