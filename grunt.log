@@ -1,0 +1,1154 @@
+[4mInitializing[24m
+Command-line options: [36m--verbose[39m
+
+Reading "Gruntfile.js" Gruntfile...[32mOK[39m
+
+[1mRegistering Gruntfile tasks.[22m
+Initializing config...[32mOK[39m
+Loading "Gruntfile.js" tasks...[32mOK[39m
++ [36mbuild[39m, [36mdefault[39m, [36mheroku:production[39m, [36mserve[39m, [36mserver[39m, [36mtest[39m
+
+Running tasks: [36mbuild[39m
+
+[4mRunning "build" task[24m
+
+[4mLoading "grunt-contrib-clean" plugin[24m
+
+[1mRegistering "D:\wamp\www\amiiboList\node_modules\grunt-contrib-clean\tasks" tasks.[22m
+Loading "clean.js" tasks...[32mOK[39m
++ [36mclean[39m
+
+[4mRunning "clean:dist" (clean) task[24m
+Verifying property [36mclean.dist[39m exists in config...[32mOK[39m
+Files: [36m.tmp[39m, [36mdist/.htaccess[39m, [36mdist/404.html[39m, [36mdist/bower_components[39m, [36mdist/bower_components/bootstrap-sass-official[39m, [36mdist/favicon.ico[39m, [36mdist/images[39m, [36mdist/images/amiibo[39m, [36mdist/index.html[39m, [36mdist/res[39m, [36mdist/res/amiibo.json[39m, [36mdist/robots.txt[39m, [36mdist/scripts[39m, [36mdist/scripts/scripts.d8b6a0f4.js[39m, [36mdist/scripts/vendor.6062da33.js[39m, [36mdist/styles[39m, [36mdist/styles/main.523d8dee.css[39m, [36mdist/styles/vendor.d41d8cd9.css[39m
+Options: [36mforce=false[39m, [36mno-write=false[39m
+Cleaning .tmp...
+Cleaning dist/.htaccess...
+Cleaning dist/404.html...
+Cleaning dist/bower_components...
+Cleaning dist/favicon.ico...
+Cleaning dist/images...
+Cleaning dist/index.html...
+Cleaning dist/res...
+Cleaning dist/robots.txt...
+Cleaning dist/scripts...
+Cleaning dist/styles...
+[32m>> [39m18 paths cleaned.
+
+[4mLoading "grunt-wiredep" plugin[24m
+
+[1mRegistering "D:\wamp\www\amiiboList\node_modules\grunt-wiredep\tasks" tasks.[22m
+Loading "wiredep.js" tasks...[32mOK[39m
++ [36mwiredep[39m
+
+[4mRunning "wiredep" task[24m
+
+[4mRunning "wiredep:app" (wiredep) task[24m
+Verifying property [36mwiredep.app[39m exists in config...[32mOK[39m
+Files: [36mapp/index.html[39m
+Verifying property [36mwiredep.app.src[39m exists in config...[32mOK[39m
+Options: [36msrc=["app/index.html"][39m, [36mignorePath={}[39m
+
+[4mRunning "wiredep:test" (wiredep) task[24m
+Verifying property [36mwiredep.test[39m exists in config...[32mOK[39m
+Files: [36mtest/karma.conf.js[39m
+Verifying property [36mwiredep.test.src[39m exists in config...[32mOK[39m
+Options: [36mdevDependencies[39m, [36msrc="test/karma.conf.js"[39m, [36mignorePath={}[39m, [36mfileTypes={"js":{"block":{},"detect":{"js":{}},"replace":{"js":"'{{filePath}}',"}}}[39m
+
+[4mRunning "wiredep:sass" (wiredep) task[24m
+Verifying property [36mwiredep.sass[39m exists in config...[32mOK[39m
+Files: [36mapp/styles/main.scss[39m, [36mapp/styles/variables.scss[39m
+Verifying property [36mwiredep.sass.src[39m exists in config...[32mOK[39m
+Options: [36msrc=["app/styles/{,*/}*.{scss,sass}"][39m, [36mignorePath={}[39m
+
+[4mLoading "grunt-usemin" plugin[24m
+
+[1mRegistering "D:\wamp\www\amiiboList\node_modules\grunt-usemin\tasks" tasks.[22m
+Loading "usemin.js" tasks...[32mOK[39m
++ [36musemin[39m, [36museminPrepare[39m
+
+[4mRunning "useminPrepare" task[24m
+
+[4mRunning "useminPrepare:html" (useminPrepare) task[24m
+Verifying property [36museminPrepare.html[39m exists in config...[32mOK[39m
+Files: [36mapp/index.html[39m -> [36mhtml[39m
+Options: [36mdest="dist"[39m, [36mflow={"html":{"steps":{"js":["concat","uglify.js"],"css":["cssmin"]},"post":{}}}[39m
+Going through [36mapp/index.html[39m to update the config
+Looking for build script HTML comment blocks
+
+[1mConfiguration is now:[22m
+
+[1m  concat:[22m
+  { generated: 
+   { files: 
+      [ { dest: [32m'.tmp\\concat\\scripts\\vendor.js'[39m,
+          src: 
+           [ [32m'bower_components\\jquery\\dist\\jquery.js'[39m,
+             [32m'bower_components\\angular\\angular.js'[39m,
+             [32m'bower_components\\angular-animate\\angular-animate.js'[39m,
+             [32m'bower_components\\angular-aria\\angular-aria.js'[39m,
+             [32m'bower_components\\angular-cookies\\angular-cookies.js'[39m,
+             [32m'bower_components\\angular-remove-diacritics\\remove-diacritics.js'[39m,
+             [32m'bower_components\\angular-resource\\angular-resource.js'[39m,
+             [32m'bower_components\\angular-route\\angular-route.js'[39m,
+             [32m'bower_components\\angular-sanitize\\angular-sanitize.js'[39m,
+             [32m'bower_components\\angular-touch\\angular-touch.js'[39m,
+             [32m'bower_components\\bootstrap-sass-official\\assets\\javascripts\\bootstrap.js'[39m ] },
+        { dest: [32m'.tmp\\concat\\scripts\\scripts.js'[39m,
+          src: 
+           [ [32m'{.tmp,app}\\scripts\\app.js'[39m,
+             [32m'{.tmp,app}\\scripts\\controllers\\main.js'[39m,
+             [32m'{.tmp,app}\\scripts\\controllers\\about.js'[39m,
+             [32m'{.tmp,app}\\scripts\\controllers\\login.js'[39m,
+             [32m'{.tmp,app}\\scripts\\services\\listservice.js'[39m,
+             [32m'{.tmp,app}\\scripts\\filters\\sluggifier.js'[39m ] } ] } }
+
+[1m  uglify:[22m
+  { generated: 
+   { files: 
+      [ { dest: [32m'dist\\scripts\\vendor.js'[39m,
+          src: [ [32m'.tmp\\concat\\scripts\\vendor.js'[39m ] },
+        { dest: [32m'dist\\scripts\\scripts.js'[39m,
+          src: [ [32m'.tmp\\concat\\scripts\\scripts.js'[39m ] } ] } }
+
+[1m  cssmin:[22m
+  { generated: 
+   { files: 
+      [ { dest: [32m'dist\\styles\\vendor.css'[39m, src: [] },
+        { dest: [32m'dist\\styles\\main.css'[39m,
+          src: [ [32m'app\\styles\\main.css'[39m ] } ] } }
+
+[4mLoading "grunt-concurrent" plugin[24m
+
+[1mRegistering "D:\wamp\www\amiiboList\node_modules\grunt-concurrent\tasks" tasks.[22m
+Loading "concurrent.js" tasks...[32mOK[39m
++ [36mconcurrent[39m
+
+[4mRunning "concurrent:dist" (concurrent) task[24m
+Verifying property [36mconcurrent.dist[39m exists in config...[32mOK[39m
+Files: [33m[no src][39m -> [36mdist[39m
+Options: [36mlimit=16[39m
+    
+[4mInitializing[24m
+Command-line options: [36m--verbose[39m
+
+Reading "Gruntfile.js" Gruntfile...[32mOK[39m
+
+[1mRegistering Gruntfile tasks.[22m
+Initializing config...[32mOK[39m
+Loading "Gruntfile.js" tasks...[32mOK[39m
++ [36mbuild[39m, [36mdefault[39m, [36mheroku:production[39m, [36mserve[39m, [36mserver[39m, [36mtest[39m
+
+Running tasks: [36msvgmin[39m
+
+[4mLoading "grunt-svgmin" plugin[24m
+
+[1mRegistering "D:\wamp\www\amiiboList\node_modules\grunt-svgmin\tasks" tasks.[22m
+Loading "svgmin.js" tasks...[32mOK[39m
++ [36msvgmin[39m
+
+[4mRunning "svgmin" task[24m
+
+[4mRunning "svgmin:dist" (svgmin) task[24m
+Verifying property [36msvgmin.dist[39m exists in config...[32mOK[39m
+Options: [36m(none)[39m
+Total saved: 0 B
+
+[32mDone, without errors.[39m
+    
+[4mInitializing[24m
+Command-line options: [36m--verbose[39m
+
+Reading "Gruntfile.js" Gruntfile...[32mOK[39m
+
+[1mRegistering Gruntfile tasks.[22m
+Initializing config...[32mOK[39m
+Loading "Gruntfile.js" tasks...[32mOK[39m
++ [36mbuild[39m, [36mdefault[39m, [36mheroku:production[39m, [36mserve[39m, [36mserver[39m, [36mtest[39m
+
+Running tasks: [36mimagemin[39m
+
+[4mLoading "grunt-contrib-imagemin" plugin[24m
+
+[1mRegistering "D:\wamp\www\amiiboList\node_modules\grunt-contrib-imagemin\tasks" tasks.[22m
+Loading "imagemin.js" tasks...[32mOK[39m
++ [36mimagemin[39m
+
+[4mRunning "imagemin" task[24m
+
+[4mRunning "imagemin:dist" (imagemin) task[24m
+Verifying property [36mimagemin.dist[39m exists in config...[32mOK[39m
+Options: [36minterlaced[39m, [36moptimizationLevel=3[39m, [36mprogressive[39m
+Minified 0 images (saved 0 B)
+
+[32mDone, without errors.[39m
+
+[4mLoading "grunt-autoprefixer" plugin[24m
+
+[1mRegistering "D:\wamp\www\amiiboList\node_modules\grunt-autoprefixer\tasks" tasks.[22m
+Loading "autoprefixer.js" tasks...[32mOK[39m
++ [36mautoprefixer[39m
+
+[4mRunning "autoprefixer" task[24m
+
+[4mRunning "autoprefixer:server" (autoprefixer) task[24m
+Verifying property [36mautoprefixer.server[39m exists in config...[32mOK[39m
+Options: [36mbrowsers=["last 1 version"][39m, [36mcascade[39m, [36mdiff=false[39m, [36mmap[39m, [36msilent=false[39m, [36mremove[39m, [36msafe=false[39m
+
+[4mRunning "autoprefixer:dist" (autoprefixer) task[24m
+Verifying property [36mautoprefixer.dist[39m exists in config...[32mOK[39m
+Options: [36mbrowsers=["last 1 version"][39m, [36mcascade[39m, [36mdiff=false[39m, [36mmap=false[39m, [36msilent=false[39m, [36mremove[39m, [36msafe=false[39m
+
+[4mLoading "grunt-angular-templates" plugin[24m
+
+[1mRegistering "D:\wamp\www\amiiboList\node_modules\grunt-angular-templates\tasks" tasks.[22m
+Loading "angular-templates.js" tasks...[32mOK[39m
++ [36mngtemplates[39m
+
+[4mRunning "ngtemplates" task[24m
+
+[4mRunning "ngtemplates:dist" (ngtemplates) task[24m
+Verifying property [36mngtemplates.dist[39m exists in config...[32mOK[39m
+Files: [36mviews/about.html[39m, [36mviews/login.html[39m, [36mviews/main.html[39m -> [36m.tmp/templateCache.js[39m
+Options: [36mangular="angular"[39m, [36mbootstrap=undefined[39m, [36mconcat=null[39m, [36mhtmlmin={"collapseWhitespace":true,"conservativeCollapse":true,"collapseBooleanAttributes":true,"removeCommentsFromCDATA":true}[39m, [36mmodule="amiiboListApp"[39m, [36mprefix=""[39m, [36msource=undefined[39m, [36mstandalone=false[39m, [36murl=undefined[39m, [36musemin="scripts/scripts.js"[39m, [36mappend=false[39m
+Options: [36mangular="angular"[39m, [36mbootstrap=undefined[39m, [36mconcat=null[39m, [36mhtmlmin={"collapseWhitespace":true,"conservativeCollapse":true,"collapseBooleanAttributes":true,"removeCommentsFromCDATA":true}[39m, [36mmodule="amiiboListApp"[39m, [36mprefix=""[39m, [36msource=undefined[39m, [36mstandalone=false[39m, [36murl=undefined[39m, [36musemin="scripts/scripts.js"[39m, [36mappend=false[39m
+Reading app/views/about.html...[32mOK[39m
+Reading app/views/login.html...[32mOK[39m
+Reading app/views/main.html...[32mOK[39m
+Writing .tmp/templateCache.js...[32mOK[39m
+File [36m.tmp/templateCache.js[39m created.
+Files: [33m[no src][39m -> [36mdist\scripts\vendor.js[39m
+Files: [33m[no src][39m -> [36mdist\scripts\scripts.js[39m
+Files: [36mbower_components/jquery/dist/jquery.js[39m, [36mbower_components/angular/angular.js[39m, [36mbower_components/angular-animate/angular-animate.js[39m, [36mbower_components/angular-aria/angular-aria.js[39m, [36mbower_components/angular-cookies/angular-cookies.js[39m, [36mbower_components/angular-remove-diacritics/remove-diacritics.js[39m, [36mbower_components/angular-resource/angular-resource.js[39m, [36mbower_components/angular-route/angular-route.js[39m, [36mbower_components/angular-sanitize/angular-sanitize.js[39m, [36mbower_components/angular-touch/angular-touch.js[39m, [36mbower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js[39m -> [36m.tmp\concat\scripts\vendor.js[39m
+Files: [36mapp/scripts/app.js[39m, [36mapp/scripts/controllers/main.js[39m, [36mapp/scripts/controllers/about.js[39m, [36mapp/scripts/controllers/login.js[39m, [36mapp/scripts/services/listservice.js[39m, [36mapp/scripts/filters/sluggifier.js[39m -> [36m.tmp\concat\scripts\scripts.js[39m
+Added [36m.tmp/templateCache.js[39m to [33m<!-- build:js scripts/scripts.js -->[39m
+
+[4mLoading "grunt-contrib-concat" plugin[24m
+
+[1mRegistering "D:\wamp\www\amiiboList\node_modules\grunt-contrib-concat\tasks" tasks.[22m
+Loading "concat.js" tasks...[32mOK[39m
++ [36mconcat[39m
+
+[4mRunning "concat" task[24m
+
+[4mRunning "concat:generated" (concat) task[24m
+Verifying property [36mconcat.generated[39m exists in config...[32mOK[39m
+Files: [36mbower_components/jquery/dist/jquery.js[39m, [36mbower_components/angular/angular.js[39m, [36mbower_components/angular-animate/angular-animate.js[39m, [36mbower_components/angular-aria/angular-aria.js[39m, [36mbower_components/angular-cookies/angular-cookies.js[39m, [36mbower_components/angular-remove-diacritics/remove-diacritics.js[39m, [36mbower_components/angular-resource/angular-resource.js[39m, [36mbower_components/angular-route/angular-route.js[39m, [36mbower_components/angular-sanitize/angular-sanitize.js[39m, [36mbower_components/angular-touch/angular-touch.js[39m, [36mbower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js[39m -> [36m.tmp\concat\scripts\vendor.js[39m
+Files: [36mapp/scripts/app.js[39m, [36mapp/scripts/controllers/main.js[39m, [36mapp/scripts/controllers/about.js[39m, [36mapp/scripts/controllers/login.js[39m, [36mapp/scripts/services/listservice.js[39m, [36mapp/scripts/filters/sluggifier.js[39m, [36m.tmp/templateCache.js[39m -> [36m.tmp\concat\scripts\scripts.js[39m
+Options: [36mseparator="\r\n"[39m, [36mbanner=""[39m, [36mfooter=""[39m, [36mstripBanners=false[39m, [36mprocess=false[39m, [36msourceMap=false[39m, [36msourceMapName=undefined[39m, [36msourceMapStyle="embed"[39m
+Reading bower_components/jquery/dist/jquery.js...[32mOK[39m
+Reading bower_components/angular/angular.js...[32mOK[39m
+Reading bower_components/angular-animate/angular-animate.js...[32mOK[39m
+Reading bower_components/angular-aria/angular-aria.js...[32mOK[39m
+Reading bower_components/angular-cookies/angular-cookies.js...[32mOK[39m
+Reading bower_components/angular-remove-diacritics/remove-diacritics.js...[32mOK[39m
+Reading bower_components/angular-resource/angular-resource.js...[32mOK[39m
+Reading bower_components/angular-route/angular-route.js...[32mOK[39m
+Reading bower_components/angular-sanitize/angular-sanitize.js...[32mOK[39m
+Reading bower_components/angular-touch/angular-touch.js...[32mOK[39m
+Reading bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js...[32mOK[39m
+Writing .tmp\concat\scripts\vendor.js...[32mOK[39m
+File .tmp\concat\scripts\vendor.js created.
+Reading app/scripts/app.js...[32mOK[39m
+Reading app/scripts/controllers/main.js...[32mOK[39m
+Reading app/scripts/controllers/about.js...[32mOK[39m
+Reading app/scripts/controllers/login.js...[32mOK[39m
+Reading app/scripts/services/listservice.js...[32mOK[39m
+Reading app/scripts/filters/sluggifier.js...[32mOK[39m
+Reading .tmp/templateCache.js...[32mOK[39m
+Writing .tmp\concat\scripts\scripts.js...[32mOK[39m
+File .tmp\concat\scripts\scripts.js created.
+
+[4mLoading "grunt-ng-annotate" plugin[24m
+
+[1mRegistering "D:\wamp\www\amiiboList\node_modules\grunt-ng-annotate\tasks" tasks.[22m
+Loading "ng-annotate.js" tasks...[32mOK[39m
++ [36mngAnnotate[39m
+
+[4mRunning "ngAnnotate" task[24m
+
+[4mRunning "ngAnnotate:dist" (ngAnnotate) task[24m
+Verifying property [36mngAnnotate.dist[39m exists in config...[32mOK[39m
+Files: [36m.tmp/concat/scripts/scripts.js[39m -> [36m.tmp/concat/scripts/scripts.js[39m
+Files: [36m.tmp/concat/scripts/vendor.js[39m -> [36m.tmp/concat/scripts/vendor.js[39m
+Options: [36m(none)[39m
+Reading .tmp/concat/scripts/scripts.js...[32mOK[39m
+Writing .tmp/concat/scripts/scripts.js...[32mOK[39m
+Reading .tmp/concat/scripts/vendor.js...[32mOK[39m
+Writing .tmp/concat/scripts/vendor.js...[32mOK[39m
+[32m>> [39m2 files successfully generated.
+
+[4mLoading "grunt-contrib-copy" plugin[24m
+
+[1mRegistering "D:\wamp\www\amiiboList\node_modules\grunt-contrib-copy\tasks" tasks.[22m
+Loading "copy.js" tasks...[32mOK[39m
++ [36mcopy[39m
+
+[4mRunning "copy:dist" (copy) task[24m
+Verifying property [36mcopy.dist[39m exists in config...[32mOK[39m
+Files: [36mapp/favicon.ico[39m -> [36mdist/favicon.ico[39m
+Files: [36mapp/robots.txt[39m -> [36mdist/robots.txt[39m
+Files: [36mapp/.htaccess[39m -> [36mdist/.htaccess[39m
+Files: [36mapp/404.html[39m -> [36mdist/404.html[39m
+Files: [36mapp/index.html[39m -> [36mdist/index.html[39m
+Files: [36mapp/images/amiibo/acc/keke.jpg[39m -> [36mdist/images/amiibo/acc/keke.jpg[39m
+Files: [36mapp/images/amiibo/acc/layette.jpg[39m -> [36mdist/images/amiibo/acc/layette.jpg[39m
+Files: [36mapp/images/amiibo/acc/lou.jpg[39m -> [36mdist/images/amiibo/acc/lou.jpg[39m
+Files: [36mapp/images/amiibo/acc/marie.jpg[39m -> [36mdist/images/amiibo/acc/marie.jpg[39m
+Files: [36mapp/images/amiibo/acc/max.jpg[39m -> [36mdist/images/amiibo/acc/max.jpg[39m
+Files: [36mapp/images/amiibo/acc/risette.jpg[39m -> [36mdist/images/amiibo/acc/risette.jpg[39m
+Files: [36mapp/images/amiibo/acc/serge.jpg[39m -> [36mdist/images/amiibo/acc/serge.jpg[39m
+Files: [36mapp/images/amiibo/acc/tom_nook.jpg[39m -> [36mdist/images/amiibo/acc/tom_nook.jpg[39m
+Files: [36mapp/images/amiibo/crc/chibi_robo.jpg[39m -> [36mdist/images/amiibo/crc/chibi_robo.jpg[39m
+Files: [36mapp/images/amiibo/mario_30th_bday/box/mario_couleurs_classiques.jpg[39m -> [36mdist/images/amiibo/mario_30th_bday/box/mario_couleurs_classiques.jpg[39m
+Files: [36mapp/images/amiibo/mario_30th_bday/box/mario_couleurs_modernes.jpg[39m -> [36mdist/images/amiibo/mario_30th_bday/box/mario_couleurs_modernes.jpg[39m
+Files: [36mapp/images/amiibo/mario_30th_bday/mario__couleurs_classiques_.jpg[39m -> [36mdist/images/amiibo/mario_30th_bday/mario__couleurs_classiques_.jpg[39m
+Files: [36mapp/images/amiibo/mario_30th_bday/mario__couleurs_modernes_.jpg[39m -> [36mdist/images/amiibo/mario_30th_bday/mario__couleurs_modernes_.jpg[39m
+Files: [36mapp/images/amiibo/splatoon/box/fille_inkling.jpg[39m -> [36mdist/images/amiibo/splatoon/box/fille_inkling.jpg[39m
+Files: [36mapp/images/amiibo/splatoon/box/garcon_inkling.jpg[39m -> [36mdist/images/amiibo/splatoon/box/garcon_inkling.jpg[39m
+Files: [36mapp/images/amiibo/splatoon/bundle/calamar_inkling.png[39m -> [36mdist/images/amiibo/splatoon/bundle/calamar_inkling.png[39m
+Files: [36mapp/images/amiibo/splatoon/calamar_inkling.jpg[39m -> [36mdist/images/amiibo/splatoon/calamar_inkling.jpg[39m
+Files: [36mapp/images/amiibo/splatoon/fille_inkling.jpg[39m -> [36mdist/images/amiibo/splatoon/fille_inkling.jpg[39m
+Files: [36mapp/images/amiibo/splatoon/garcon_inkling.jpg[39m -> [36mdist/images/amiibo/splatoon/garcon_inkling.jpg[39m
+Files: [36mapp/images/amiibo/ssb/amphinobi.jpg[39m -> [36mdist/images/amiibo/ssb/amphinobi.jpg[39m
+Files: [36mapp/images/amiibo/ssb/bowser.jpg[39m -> [36mdist/images/amiibo/ssb/bowser.jpg[39m
+Files: [36mapp/images/amiibo/ssb/bowser__jr.jpg[39m -> [36mdist/images/amiibo/ssb/bowser__jr.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/amphinobi.jpg[39m -> [36mdist/images/amiibo/ssb/box/amphinobi.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/bowser.jpg[39m -> [36mdist/images/amiibo/ssb/box/bowser.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/bowser_jr.jpg[39m -> [36mdist/images/amiibo/ssb/box/bowser_jr.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/boxeur_mii.jpg[39m -> [36mdist/images/amiibo/ssb/box/boxeur_mii.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/captain_falcon.jpg[39m -> [36mdist/images/amiibo/ssb/box/captain_falcon.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/daraen.jpg[39m -> [36mdist/images/amiibo/ssb/box/daraen.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/diddy_kong.jpg[39m -> [36mdist/images/amiibo/ssb/box/diddy_kong.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/donkey_kong.jpg[39m -> [36mdist/images/amiibo/ssb/box/donkey_kong.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/dr__mario.jpg[39m -> [36mdist/images/amiibo/ssb/box/dr__mario.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/dracaufeu.jpg[39m -> [36mdist/images/amiibo/ssb/box/dracaufeu.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/duo_duck_hunt.jpg[39m -> [36mdist/images/amiibo/ssb/box/duo_duck_hunt.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/entraineuse_wii_fit.jpg[39m -> [36mdist/images/amiibo/ssb/box/entraineuse_wii_fit.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/epeiste_mii.jpg[39m -> [36mdist/images/amiibo/ssb/box/epeiste_mii.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/falco.jpg[39m -> [36mdist/images/amiibo/ssb/box/falco.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/fox.jpg[39m -> [36mdist/images/amiibo/ssb/box/fox.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/ganondorf.jpg[39m -> [36mdist/images/amiibo/ssb/box/ganondorf.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/harmonie___luma.jpg[39m -> [36mdist/images/amiibo/ssb/box/harmonie___luma.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/ike.jpg[39m -> [36mdist/images/amiibo/ssb/box/ike.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/kirby.jpg[39m -> [36mdist/images/amiibo/ssb/box/kirby.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/link.jpg[39m -> [36mdist/images/amiibo/ssb/box/link.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/link_cartoon.jpg[39m -> [36mdist/images/amiibo/ssb/box/link_cartoon.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/little_mac.jpg[39m -> [36mdist/images/amiibo/ssb/box/little_mac.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/lucario.jpg[39m -> [36mdist/images/amiibo/ssb/box/lucario.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/lucina.jpg[39m -> [36mdist/images/amiibo/ssb/box/lucina.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/luigi.jpg[39m -> [36mdist/images/amiibo/ssb/box/luigi.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/mario.jpg[39m -> [36mdist/images/amiibo/ssb/box/mario.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/marth.jpg[39m -> [36mdist/images/amiibo/ssb/box/marth.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/megaman.jpg[39m -> [36mdist/images/amiibo/ssb/box/megaman.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/meta_knight.jpg[39m -> [36mdist/images/amiibo/ssb/box/meta_knight.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/mewtwo.jpg[39m -> [36mdist/images/amiibo/ssb/box/mewtwo.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/mr_game__watch.jpg[39m -> [36mdist/images/amiibo/ssb/box/mr_game__watch.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/ness.jpg[39m -> [36mdist/images/amiibo/ssb/box/ness.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/olimar.jpg[39m -> [36mdist/images/amiibo/ssb/box/olimar.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/pac_man.jpg[39m -> [36mdist/images/amiibo/ssb/box/pac_man.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/palutena.jpg[39m -> [36mdist/images/amiibo/ssb/box/palutena.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/peach.jpg[39m -> [36mdist/images/amiibo/ssb/box/peach.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/pikachu.jpg[39m -> [36mdist/images/amiibo/ssb/box/pikachu.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/pit.jpg[39m -> [36mdist/images/amiibo/ssb/box/pit.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/pit_malefique.jpg[39m -> [36mdist/images/amiibo/ssb/box/pit_malefique.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/r_o_b_.jpg[39m -> [36mdist/images/amiibo/ssb/box/r_o_b_.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/roi_dadidou.jpg[39m -> [36mdist/images/amiibo/ssb/box/roi_dadidou.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/rondoudou.jpg[39m -> [36mdist/images/amiibo/ssb/box/rondoudou.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/samus.jpg[39m -> [36mdist/images/amiibo/ssb/box/samus.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/samus_sans_armure.jpg[39m -> [36mdist/images/amiibo/ssb/box/samus_sans_armure.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/sheik.jpg[39m -> [36mdist/images/amiibo/ssb/box/sheik.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/shulk.jpg[39m -> [36mdist/images/amiibo/ssb/box/shulk.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/sonic.jpg[39m -> [36mdist/images/amiibo/ssb/box/sonic.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/tireuse_mii.jpg[39m -> [36mdist/images/amiibo/ssb/box/tireuse_mii.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/villageois.jpg[39m -> [36mdist/images/amiibo/ssb/box/villageois.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/wario.jpg[39m -> [36mdist/images/amiibo/ssb/box/wario.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/yoshi.jpg[39m -> [36mdist/images/amiibo/ssb/box/yoshi.jpg[39m
+Files: [36mapp/images/amiibo/ssb/box/zelda.jpg[39m -> [36mdist/images/amiibo/ssb/box/zelda.jpg[39m
+Files: [36mapp/images/amiibo/ssb/boxeur_mii.jpg[39m -> [36mdist/images/amiibo/ssb/boxeur_mii.jpg[39m
+Files: [36mapp/images/amiibo/ssb/bundle/mario.png[39m -> [36mdist/images/amiibo/ssb/bundle/mario.png[39m
+Files: [36mapp/images/amiibo/ssb/captain_falcon.jpg[39m -> [36mdist/images/amiibo/ssb/captain_falcon.jpg[39m
+Files: [36mapp/images/amiibo/ssb/daraen.jpg[39m -> [36mdist/images/amiibo/ssb/daraen.jpg[39m
+Files: [36mapp/images/amiibo/ssb/diddy_kong.jpg[39m -> [36mdist/images/amiibo/ssb/diddy_kong.jpg[39m
+Files: [36mapp/images/amiibo/ssb/donkey_kong.jpg[39m -> [36mdist/images/amiibo/ssb/donkey_kong.jpg[39m
+Files: [36mapp/images/amiibo/ssb/dr__mario.jpg[39m -> [36mdist/images/amiibo/ssb/dr__mario.jpg[39m
+Files: [36mapp/images/amiibo/ssb/dracaufeu.jpg[39m -> [36mdist/images/amiibo/ssb/dracaufeu.jpg[39m
+Files: [36mapp/images/amiibo/ssb/duo_duck_hunt.jpg[39m -> [36mdist/images/amiibo/ssb/duo_duck_hunt.jpg[39m
+Files: [36mapp/images/amiibo/ssb/entraineuse_wii_fit.jpg[39m -> [36mdist/images/amiibo/ssb/entraineuse_wii_fit.jpg[39m
+Files: [36mapp/images/amiibo/ssb/epeiste_mii.jpg[39m -> [36mdist/images/amiibo/ssb/epeiste_mii.jpg[39m
+Files: [36mapp/images/amiibo/ssb/falco.jpg[39m -> [36mdist/images/amiibo/ssb/falco.jpg[39m
+Files: [36mapp/images/amiibo/ssb/fox.jpg[39m -> [36mdist/images/amiibo/ssb/fox.jpg[39m
+Files: [36mapp/images/amiibo/ssb/ganondorf.jpg[39m -> [36mdist/images/amiibo/ssb/ganondorf.jpg[39m
+Files: [36mapp/images/amiibo/ssb/harmonie___luma.jpg[39m -> [36mdist/images/amiibo/ssb/harmonie___luma.jpg[39m
+Files: [36mapp/images/amiibo/ssb/ike.jpg[39m -> [36mdist/images/amiibo/ssb/ike.jpg[39m
+Files: [36mapp/images/amiibo/ssb/kirby.jpg[39m -> [36mdist/images/amiibo/ssb/kirby.jpg[39m
+Files: [36mapp/images/amiibo/ssb/link.jpg[39m -> [36mdist/images/amiibo/ssb/link.jpg[39m
+Files: [36mapp/images/amiibo/ssb/link_cartoon.jpg[39m -> [36mdist/images/amiibo/ssb/link_cartoon.jpg[39m
+Files: [36mapp/images/amiibo/ssb/little_mac.jpg[39m -> [36mdist/images/amiibo/ssb/little_mac.jpg[39m
+Files: [36mapp/images/amiibo/ssb/lucario.jpg[39m -> [36mdist/images/amiibo/ssb/lucario.jpg[39m
+Files: [36mapp/images/amiibo/ssb/lucina.jpg[39m -> [36mdist/images/amiibo/ssb/lucina.jpg[39m
+Files: [36mapp/images/amiibo/ssb/luigi.jpg[39m -> [36mdist/images/amiibo/ssb/luigi.jpg[39m
+Files: [36mapp/images/amiibo/ssb/mario.jpg[39m -> [36mdist/images/amiibo/ssb/mario.jpg[39m
+Files: [36mapp/images/amiibo/ssb/marth.jpg[39m -> [36mdist/images/amiibo/ssb/marth.jpg[39m
+Files: [36mapp/images/amiibo/ssb/megaman.jpg[39m -> [36mdist/images/amiibo/ssb/megaman.jpg[39m
+Files: [36mapp/images/amiibo/ssb/meta_knight.jpg[39m -> [36mdist/images/amiibo/ssb/meta_knight.jpg[39m
+Files: [36mapp/images/amiibo/ssb/mewtwo.jpg[39m -> [36mdist/images/amiibo/ssb/mewtwo.jpg[39m
+Files: [36mapp/images/amiibo/ssb/mr__game___watch.jpg[39m -> [36mdist/images/amiibo/ssb/mr__game___watch.jpg[39m
+Files: [36mapp/images/amiibo/ssb/ness.jpg[39m -> [36mdist/images/amiibo/ssb/ness.jpg[39m
+Files: [36mapp/images/amiibo/ssb/olimar.jpg[39m -> [36mdist/images/amiibo/ssb/olimar.jpg[39m
+Files: [36mapp/images/amiibo/ssb/pac_man.jpg[39m -> [36mdist/images/amiibo/ssb/pac_man.jpg[39m
+Files: [36mapp/images/amiibo/ssb/palutena.jpg[39m -> [36mdist/images/amiibo/ssb/palutena.jpg[39m
+Files: [36mapp/images/amiibo/ssb/peach.jpg[39m -> [36mdist/images/amiibo/ssb/peach.jpg[39m
+Files: [36mapp/images/amiibo/ssb/pikachu.jpg[39m -> [36mdist/images/amiibo/ssb/pikachu.jpg[39m
+Files: [36mapp/images/amiibo/ssb/pit.jpg[39m -> [36mdist/images/amiibo/ssb/pit.jpg[39m
+Files: [36mapp/images/amiibo/ssb/pit_malefique.jpg[39m -> [36mdist/images/amiibo/ssb/pit_malefique.jpg[39m
+Files: [36mapp/images/amiibo/ssb/r_o_b_.jpg[39m -> [36mdist/images/amiibo/ssb/r_o_b_.jpg[39m
+Files: [36mapp/images/amiibo/ssb/roi_dadidou.jpg[39m -> [36mdist/images/amiibo/ssb/roi_dadidou.jpg[39m
+Files: [36mapp/images/amiibo/ssb/rondoudou.jpg[39m -> [36mdist/images/amiibo/ssb/rondoudou.jpg[39m
+Files: [36mapp/images/amiibo/ssb/samus.jpg[39m -> [36mdist/images/amiibo/ssb/samus.jpg[39m
+Files: [36mapp/images/amiibo/ssb/samus_sans_armure.jpg[39m -> [36mdist/images/amiibo/ssb/samus_sans_armure.jpg[39m
+Files: [36mapp/images/amiibo/ssb/sheik.jpg[39m -> [36mdist/images/amiibo/ssb/sheik.jpg[39m
+Files: [36mapp/images/amiibo/ssb/shulk.jpg[39m -> [36mdist/images/amiibo/ssb/shulk.jpg[39m
+Files: [36mapp/images/amiibo/ssb/sonic.jpg[39m -> [36mdist/images/amiibo/ssb/sonic.jpg[39m
+Files: [36mapp/images/amiibo/ssb/tireuse_mii.jpg[39m -> [36mdist/images/amiibo/ssb/tireuse_mii.jpg[39m
+Files: [36mapp/images/amiibo/ssb/villageois.jpg[39m -> [36mdist/images/amiibo/ssb/villageois.jpg[39m
+Files: [36mapp/images/amiibo/ssb/wario.jpg[39m -> [36mdist/images/amiibo/ssb/wario.jpg[39m
+Files: [36mapp/images/amiibo/ssb/yoshi.jpg[39m -> [36mdist/images/amiibo/ssb/yoshi.jpg[39m
+Files: [36mapp/images/amiibo/ssb/zelda.jpg[39m -> [36mdist/images/amiibo/ssb/zelda.jpg[39m
+Files: [36mapp/images/amiibo/super_mario/bowser.jpg[39m -> [36mdist/images/amiibo/super_mario/bowser.jpg[39m
+Files: [36mapp/images/amiibo/super_mario/box/bowser.jpg[39m -> [36mdist/images/amiibo/super_mario/box/bowser.jpg[39m
+Files: [36mapp/images/amiibo/super_mario/box/luigi.jpg[39m -> [36mdist/images/amiibo/super_mario/box/luigi.jpg[39m
+Files: [36mapp/images/amiibo/super_mario/box/mario.jpg[39m -> [36mdist/images/amiibo/super_mario/box/mario.jpg[39m
+Files: [36mapp/images/amiibo/super_mario/box/peach.jpg[39m -> [36mdist/images/amiibo/super_mario/box/peach.jpg[39m
+Files: [36mapp/images/amiibo/super_mario/box/toad.jpg[39m -> [36mdist/images/amiibo/super_mario/box/toad.jpg[39m
+Files: [36mapp/images/amiibo/super_mario/box/yoshi.jpg[39m -> [36mdist/images/amiibo/super_mario/box/yoshi.jpg[39m
+Files: [36mapp/images/amiibo/super_mario/bundle/mario.jpg[39m -> [36mdist/images/amiibo/super_mario/bundle/mario.jpg[39m
+Files: [36mapp/images/amiibo/super_mario/luigi.jpg[39m -> [36mdist/images/amiibo/super_mario/luigi.jpg[39m
+Files: [36mapp/images/amiibo/super_mario/mario.jpg[39m -> [36mdist/images/amiibo/super_mario/mario.jpg[39m
+Files: [36mapp/images/amiibo/super_mario/peach.jpg[39m -> [36mdist/images/amiibo/super_mario/peach.jpg[39m
+Files: [36mapp/images/amiibo/super_mario/toad.jpg[39m -> [36mdist/images/amiibo/super_mario/toad.jpg[39m
+Files: [36mapp/images/amiibo/super_mario/yoshi.jpg[39m -> [36mdist/images/amiibo/super_mario/yoshi.jpg[39m
+Files: [36mapp/images/amiibo/yww/box/mega_yoshi_de_laine.jpg[39m -> [36mdist/images/amiibo/yww/box/mega_yoshi_de_laine.jpg[39m
+Files: [36mapp/images/amiibo/yww/box/yoshi_de_laine_bleu_ciel.jpg[39m -> [36mdist/images/amiibo/yww/box/yoshi_de_laine_bleu_ciel.jpg[39m
+Files: [36mapp/images/amiibo/yww/box/yoshi_de_laine_rose.jpg[39m -> [36mdist/images/amiibo/yww/box/yoshi_de_laine_rose.jpg[39m
+Files: [36mapp/images/amiibo/yww/box/yoshi_de_laine_vert.jpg[39m -> [36mdist/images/amiibo/yww/box/yoshi_de_laine_vert.jpg[39m
+Files: [36mapp/images/amiibo/yww/bundle/yoshi_de_laine_vert.png[39m -> [36mdist/images/amiibo/yww/bundle/yoshi_de_laine_vert.png[39m
+Files: [36mapp/images/amiibo/yww/extra/mega_yoshi_de_laine.jpg[39m -> [36mdist/images/amiibo/yww/extra/mega_yoshi_de_laine.jpg[39m
+Files: [36mapp/images/amiibo/yww/mega_yoshi_de_laine.jpg[39m -> [36mdist/images/amiibo/yww/mega_yoshi_de_laine.jpg[39m
+Files: [36mapp/images/amiibo/yww/yoshi_de_laine_bleu_ciel.jpg[39m -> [36mdist/images/amiibo/yww/yoshi_de_laine_bleu_ciel.jpg[39m
+Files: [36mapp/images/amiibo/yww/yoshi_de_laine_rose.jpg[39m -> [36mdist/images/amiibo/yww/yoshi_de_laine_rose.jpg[39m
+Files: [36mapp/images/amiibo/yww/yoshi_de_laine_vert.jpg[39m -> [36mdist/images/amiibo/yww/yoshi_de_laine_vert.jpg[39m
+Files: [36mapp/res/amiibo.json[39m -> [36mdist/res/amiibo.json[39m
+Files: [36mbower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.eot[39m -> [36mdist/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.eot[39m
+Files: [36mbower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.svg[39m -> [36mdist/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.svg[39m
+Files: [36mbower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf[39m -> [36mdist/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf[39m
+Files: [36mbower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff[39m -> [36mdist/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff[39m
+Files: [36mbower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2[39m -> [36mdist/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2[39m
+Options: [36mencoding="utf8"[39m, [36mprocessContent=false[39m, [36mprocessContentExclude=[][39m, [36mtimestamp=false[39m, [36mmode=false[39m
+Copying app/favicon.ico -> dist/favicon.ico
+Reading app/favicon.ico...[32mOK[39m
+Writing dist/favicon.ico...[32mOK[39m
+Copying app/robots.txt -> dist/robots.txt
+Reading app/robots.txt...[32mOK[39m
+Writing dist/robots.txt...[32mOK[39m
+Copying app/.htaccess -> dist/.htaccess
+Reading app/.htaccess...[32mOK[39m
+Writing dist/.htaccess...[32mOK[39m
+Copying app/404.html -> dist/404.html
+Reading app/404.html...[32mOK[39m
+Writing dist/404.html...[32mOK[39m
+Copying app/index.html -> dist/index.html
+Reading app/index.html...[32mOK[39m
+Writing dist/index.html...[32mOK[39m
+Copying app/images/amiibo/acc/keke.jpg -> dist/images/amiibo/acc/keke.jpg
+Reading app/images/amiibo/acc/keke.jpg...[32mOK[39m
+Writing dist/images/amiibo/acc/keke.jpg...[32mOK[39m
+Copying app/images/amiibo/acc/layette.jpg -> dist/images/amiibo/acc/layette.jpg
+Reading app/images/amiibo/acc/layette.jpg...[32mOK[39m
+Writing dist/images/amiibo/acc/layette.jpg...[32mOK[39m
+Copying app/images/amiibo/acc/lou.jpg -> dist/images/amiibo/acc/lou.jpg
+Reading app/images/amiibo/acc/lou.jpg...[32mOK[39m
+Writing dist/images/amiibo/acc/lou.jpg...[32mOK[39m
+Copying app/images/amiibo/acc/marie.jpg -> dist/images/amiibo/acc/marie.jpg
+Reading app/images/amiibo/acc/marie.jpg...[32mOK[39m
+Writing dist/images/amiibo/acc/marie.jpg...[32mOK[39m
+Copying app/images/amiibo/acc/max.jpg -> dist/images/amiibo/acc/max.jpg
+Reading app/images/amiibo/acc/max.jpg...[32mOK[39m
+Writing dist/images/amiibo/acc/max.jpg...[32mOK[39m
+Copying app/images/amiibo/acc/risette.jpg -> dist/images/amiibo/acc/risette.jpg
+Reading app/images/amiibo/acc/risette.jpg...[32mOK[39m
+Writing dist/images/amiibo/acc/risette.jpg...[32mOK[39m
+Copying app/images/amiibo/acc/serge.jpg -> dist/images/amiibo/acc/serge.jpg
+Reading app/images/amiibo/acc/serge.jpg...[32mOK[39m
+Writing dist/images/amiibo/acc/serge.jpg...[32mOK[39m
+Copying app/images/amiibo/acc/tom_nook.jpg -> dist/images/amiibo/acc/tom_nook.jpg
+Reading app/images/amiibo/acc/tom_nook.jpg...[32mOK[39m
+Writing dist/images/amiibo/acc/tom_nook.jpg...[32mOK[39m
+Copying app/images/amiibo/crc/chibi_robo.jpg -> dist/images/amiibo/crc/chibi_robo.jpg
+Reading app/images/amiibo/crc/chibi_robo.jpg...[32mOK[39m
+Writing dist/images/amiibo/crc/chibi_robo.jpg...[32mOK[39m
+Copying app/images/amiibo/mario_30th_bday/box/mario_couleurs_classiques.jpg -> dist/images/amiibo/mario_30th_bday/box/mario_couleurs_classiques.jpg
+Reading app/images/amiibo/mario_30th_bday/box/mario_couleurs_classiques.jpg...[32mOK[39m
+Writing dist/images/amiibo/mario_30th_bday/box/mario_couleurs_classiques.jpg...[32mOK[39m
+Copying app/images/amiibo/mario_30th_bday/box/mario_couleurs_modernes.jpg -> dist/images/amiibo/mario_30th_bday/box/mario_couleurs_modernes.jpg
+Reading app/images/amiibo/mario_30th_bday/box/mario_couleurs_modernes.jpg...[32mOK[39m
+Writing dist/images/amiibo/mario_30th_bday/box/mario_couleurs_modernes.jpg...[32mOK[39m
+Copying app/images/amiibo/mario_30th_bday/mario__couleurs_classiques_.jpg -> dist/images/amiibo/mario_30th_bday/mario__couleurs_classiques_.jpg
+Reading app/images/amiibo/mario_30th_bday/mario__couleurs_classiques_.jpg...[32mOK[39m
+Writing dist/images/amiibo/mario_30th_bday/mario__couleurs_classiques_.jpg...[32mOK[39m
+Copying app/images/amiibo/mario_30th_bday/mario__couleurs_modernes_.jpg -> dist/images/amiibo/mario_30th_bday/mario__couleurs_modernes_.jpg
+Reading app/images/amiibo/mario_30th_bday/mario__couleurs_modernes_.jpg...[32mOK[39m
+Writing dist/images/amiibo/mario_30th_bday/mario__couleurs_modernes_.jpg...[32mOK[39m
+Copying app/images/amiibo/splatoon/box/fille_inkling.jpg -> dist/images/amiibo/splatoon/box/fille_inkling.jpg
+Reading app/images/amiibo/splatoon/box/fille_inkling.jpg...[32mOK[39m
+Writing dist/images/amiibo/splatoon/box/fille_inkling.jpg...[32mOK[39m
+Copying app/images/amiibo/splatoon/box/garcon_inkling.jpg -> dist/images/amiibo/splatoon/box/garcon_inkling.jpg
+Reading app/images/amiibo/splatoon/box/garcon_inkling.jpg...[32mOK[39m
+Writing dist/images/amiibo/splatoon/box/garcon_inkling.jpg...[32mOK[39m
+Copying app/images/amiibo/splatoon/bundle/calamar_inkling.png -> dist/images/amiibo/splatoon/bundle/calamar_inkling.png
+Reading app/images/amiibo/splatoon/bundle/calamar_inkling.png...[32mOK[39m
+Writing dist/images/amiibo/splatoon/bundle/calamar_inkling.png...[32mOK[39m
+Copying app/images/amiibo/splatoon/calamar_inkling.jpg -> dist/images/amiibo/splatoon/calamar_inkling.jpg
+Reading app/images/amiibo/splatoon/calamar_inkling.jpg...[32mOK[39m
+Writing dist/images/amiibo/splatoon/calamar_inkling.jpg...[32mOK[39m
+Copying app/images/amiibo/splatoon/fille_inkling.jpg -> dist/images/amiibo/splatoon/fille_inkling.jpg
+Reading app/images/amiibo/splatoon/fille_inkling.jpg...[32mOK[39m
+Writing dist/images/amiibo/splatoon/fille_inkling.jpg...[32mOK[39m
+Copying app/images/amiibo/splatoon/garcon_inkling.jpg -> dist/images/amiibo/splatoon/garcon_inkling.jpg
+Reading app/images/amiibo/splatoon/garcon_inkling.jpg...[32mOK[39m
+Writing dist/images/amiibo/splatoon/garcon_inkling.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/amphinobi.jpg -> dist/images/amiibo/ssb/amphinobi.jpg
+Reading app/images/amiibo/ssb/amphinobi.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/amphinobi.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/bowser.jpg -> dist/images/amiibo/ssb/bowser.jpg
+Reading app/images/amiibo/ssb/bowser.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/bowser.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/bowser__jr.jpg -> dist/images/amiibo/ssb/bowser__jr.jpg
+Reading app/images/amiibo/ssb/bowser__jr.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/bowser__jr.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/amphinobi.jpg -> dist/images/amiibo/ssb/box/amphinobi.jpg
+Reading app/images/amiibo/ssb/box/amphinobi.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/amphinobi.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/bowser.jpg -> dist/images/amiibo/ssb/box/bowser.jpg
+Reading app/images/amiibo/ssb/box/bowser.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/bowser.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/bowser_jr.jpg -> dist/images/amiibo/ssb/box/bowser_jr.jpg
+Reading app/images/amiibo/ssb/box/bowser_jr.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/bowser_jr.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/boxeur_mii.jpg -> dist/images/amiibo/ssb/box/boxeur_mii.jpg
+Reading app/images/amiibo/ssb/box/boxeur_mii.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/boxeur_mii.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/captain_falcon.jpg -> dist/images/amiibo/ssb/box/captain_falcon.jpg
+Reading app/images/amiibo/ssb/box/captain_falcon.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/captain_falcon.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/daraen.jpg -> dist/images/amiibo/ssb/box/daraen.jpg
+Reading app/images/amiibo/ssb/box/daraen.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/daraen.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/diddy_kong.jpg -> dist/images/amiibo/ssb/box/diddy_kong.jpg
+Reading app/images/amiibo/ssb/box/diddy_kong.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/diddy_kong.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/donkey_kong.jpg -> dist/images/amiibo/ssb/box/donkey_kong.jpg
+Reading app/images/amiibo/ssb/box/donkey_kong.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/donkey_kong.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/dr__mario.jpg -> dist/images/amiibo/ssb/box/dr__mario.jpg
+Reading app/images/amiibo/ssb/box/dr__mario.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/dr__mario.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/dracaufeu.jpg -> dist/images/amiibo/ssb/box/dracaufeu.jpg
+Reading app/images/amiibo/ssb/box/dracaufeu.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/dracaufeu.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/duo_duck_hunt.jpg -> dist/images/amiibo/ssb/box/duo_duck_hunt.jpg
+Reading app/images/amiibo/ssb/box/duo_duck_hunt.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/duo_duck_hunt.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/entraineuse_wii_fit.jpg -> dist/images/amiibo/ssb/box/entraineuse_wii_fit.jpg
+Reading app/images/amiibo/ssb/box/entraineuse_wii_fit.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/entraineuse_wii_fit.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/epeiste_mii.jpg -> dist/images/amiibo/ssb/box/epeiste_mii.jpg
+Reading app/images/amiibo/ssb/box/epeiste_mii.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/epeiste_mii.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/falco.jpg -> dist/images/amiibo/ssb/box/falco.jpg
+Reading app/images/amiibo/ssb/box/falco.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/falco.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/fox.jpg -> dist/images/amiibo/ssb/box/fox.jpg
+Reading app/images/amiibo/ssb/box/fox.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/fox.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/ganondorf.jpg -> dist/images/amiibo/ssb/box/ganondorf.jpg
+Reading app/images/amiibo/ssb/box/ganondorf.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/ganondorf.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/harmonie___luma.jpg -> dist/images/amiibo/ssb/box/harmonie___luma.jpg
+Reading app/images/amiibo/ssb/box/harmonie___luma.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/harmonie___luma.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/ike.jpg -> dist/images/amiibo/ssb/box/ike.jpg
+Reading app/images/amiibo/ssb/box/ike.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/ike.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/kirby.jpg -> dist/images/amiibo/ssb/box/kirby.jpg
+Reading app/images/amiibo/ssb/box/kirby.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/kirby.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/link.jpg -> dist/images/amiibo/ssb/box/link.jpg
+Reading app/images/amiibo/ssb/box/link.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/link.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/link_cartoon.jpg -> dist/images/amiibo/ssb/box/link_cartoon.jpg
+Reading app/images/amiibo/ssb/box/link_cartoon.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/link_cartoon.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/little_mac.jpg -> dist/images/amiibo/ssb/box/little_mac.jpg
+Reading app/images/amiibo/ssb/box/little_mac.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/little_mac.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/lucario.jpg -> dist/images/amiibo/ssb/box/lucario.jpg
+Reading app/images/amiibo/ssb/box/lucario.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/lucario.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/lucina.jpg -> dist/images/amiibo/ssb/box/lucina.jpg
+Reading app/images/amiibo/ssb/box/lucina.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/lucina.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/luigi.jpg -> dist/images/amiibo/ssb/box/luigi.jpg
+Reading app/images/amiibo/ssb/box/luigi.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/luigi.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/mario.jpg -> dist/images/amiibo/ssb/box/mario.jpg
+Reading app/images/amiibo/ssb/box/mario.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/mario.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/marth.jpg -> dist/images/amiibo/ssb/box/marth.jpg
+Reading app/images/amiibo/ssb/box/marth.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/marth.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/megaman.jpg -> dist/images/amiibo/ssb/box/megaman.jpg
+Reading app/images/amiibo/ssb/box/megaman.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/megaman.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/meta_knight.jpg -> dist/images/amiibo/ssb/box/meta_knight.jpg
+Reading app/images/amiibo/ssb/box/meta_knight.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/meta_knight.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/mewtwo.jpg -> dist/images/amiibo/ssb/box/mewtwo.jpg
+Reading app/images/amiibo/ssb/box/mewtwo.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/mewtwo.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/mr_game__watch.jpg -> dist/images/amiibo/ssb/box/mr_game__watch.jpg
+Reading app/images/amiibo/ssb/box/mr_game__watch.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/mr_game__watch.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/ness.jpg -> dist/images/amiibo/ssb/box/ness.jpg
+Reading app/images/amiibo/ssb/box/ness.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/ness.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/olimar.jpg -> dist/images/amiibo/ssb/box/olimar.jpg
+Reading app/images/amiibo/ssb/box/olimar.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/olimar.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/pac_man.jpg -> dist/images/amiibo/ssb/box/pac_man.jpg
+Reading app/images/amiibo/ssb/box/pac_man.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/pac_man.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/palutena.jpg -> dist/images/amiibo/ssb/box/palutena.jpg
+Reading app/images/amiibo/ssb/box/palutena.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/palutena.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/peach.jpg -> dist/images/amiibo/ssb/box/peach.jpg
+Reading app/images/amiibo/ssb/box/peach.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/peach.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/pikachu.jpg -> dist/images/amiibo/ssb/box/pikachu.jpg
+Reading app/images/amiibo/ssb/box/pikachu.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/pikachu.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/pit.jpg -> dist/images/amiibo/ssb/box/pit.jpg
+Reading app/images/amiibo/ssb/box/pit.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/pit.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/pit_malefique.jpg -> dist/images/amiibo/ssb/box/pit_malefique.jpg
+Reading app/images/amiibo/ssb/box/pit_malefique.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/pit_malefique.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/r_o_b_.jpg -> dist/images/amiibo/ssb/box/r_o_b_.jpg
+Reading app/images/amiibo/ssb/box/r_o_b_.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/r_o_b_.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/roi_dadidou.jpg -> dist/images/amiibo/ssb/box/roi_dadidou.jpg
+Reading app/images/amiibo/ssb/box/roi_dadidou.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/roi_dadidou.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/rondoudou.jpg -> dist/images/amiibo/ssb/box/rondoudou.jpg
+Reading app/images/amiibo/ssb/box/rondoudou.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/rondoudou.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/samus.jpg -> dist/images/amiibo/ssb/box/samus.jpg
+Reading app/images/amiibo/ssb/box/samus.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/samus.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/samus_sans_armure.jpg -> dist/images/amiibo/ssb/box/samus_sans_armure.jpg
+Reading app/images/amiibo/ssb/box/samus_sans_armure.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/samus_sans_armure.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/sheik.jpg -> dist/images/amiibo/ssb/box/sheik.jpg
+Reading app/images/amiibo/ssb/box/sheik.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/sheik.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/shulk.jpg -> dist/images/amiibo/ssb/box/shulk.jpg
+Reading app/images/amiibo/ssb/box/shulk.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/shulk.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/sonic.jpg -> dist/images/amiibo/ssb/box/sonic.jpg
+Reading app/images/amiibo/ssb/box/sonic.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/sonic.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/tireuse_mii.jpg -> dist/images/amiibo/ssb/box/tireuse_mii.jpg
+Reading app/images/amiibo/ssb/box/tireuse_mii.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/tireuse_mii.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/villageois.jpg -> dist/images/amiibo/ssb/box/villageois.jpg
+Reading app/images/amiibo/ssb/box/villageois.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/villageois.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/wario.jpg -> dist/images/amiibo/ssb/box/wario.jpg
+Reading app/images/amiibo/ssb/box/wario.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/wario.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/yoshi.jpg -> dist/images/amiibo/ssb/box/yoshi.jpg
+Reading app/images/amiibo/ssb/box/yoshi.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/yoshi.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/box/zelda.jpg -> dist/images/amiibo/ssb/box/zelda.jpg
+Reading app/images/amiibo/ssb/box/zelda.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/box/zelda.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/boxeur_mii.jpg -> dist/images/amiibo/ssb/boxeur_mii.jpg
+Reading app/images/amiibo/ssb/boxeur_mii.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/boxeur_mii.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/bundle/mario.png -> dist/images/amiibo/ssb/bundle/mario.png
+Reading app/images/amiibo/ssb/bundle/mario.png...[32mOK[39m
+Writing dist/images/amiibo/ssb/bundle/mario.png...[32mOK[39m
+Copying app/images/amiibo/ssb/captain_falcon.jpg -> dist/images/amiibo/ssb/captain_falcon.jpg
+Reading app/images/amiibo/ssb/captain_falcon.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/captain_falcon.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/daraen.jpg -> dist/images/amiibo/ssb/daraen.jpg
+Reading app/images/amiibo/ssb/daraen.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/daraen.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/diddy_kong.jpg -> dist/images/amiibo/ssb/diddy_kong.jpg
+Reading app/images/amiibo/ssb/diddy_kong.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/diddy_kong.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/donkey_kong.jpg -> dist/images/amiibo/ssb/donkey_kong.jpg
+Reading app/images/amiibo/ssb/donkey_kong.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/donkey_kong.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/dr__mario.jpg -> dist/images/amiibo/ssb/dr__mario.jpg
+Reading app/images/amiibo/ssb/dr__mario.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/dr__mario.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/dracaufeu.jpg -> dist/images/amiibo/ssb/dracaufeu.jpg
+Reading app/images/amiibo/ssb/dracaufeu.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/dracaufeu.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/duo_duck_hunt.jpg -> dist/images/amiibo/ssb/duo_duck_hunt.jpg
+Reading app/images/amiibo/ssb/duo_duck_hunt.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/duo_duck_hunt.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/entraineuse_wii_fit.jpg -> dist/images/amiibo/ssb/entraineuse_wii_fit.jpg
+Reading app/images/amiibo/ssb/entraineuse_wii_fit.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/entraineuse_wii_fit.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/epeiste_mii.jpg -> dist/images/amiibo/ssb/epeiste_mii.jpg
+Reading app/images/amiibo/ssb/epeiste_mii.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/epeiste_mii.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/falco.jpg -> dist/images/amiibo/ssb/falco.jpg
+Reading app/images/amiibo/ssb/falco.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/falco.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/fox.jpg -> dist/images/amiibo/ssb/fox.jpg
+Reading app/images/amiibo/ssb/fox.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/fox.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/ganondorf.jpg -> dist/images/amiibo/ssb/ganondorf.jpg
+Reading app/images/amiibo/ssb/ganondorf.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/ganondorf.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/harmonie___luma.jpg -> dist/images/amiibo/ssb/harmonie___luma.jpg
+Reading app/images/amiibo/ssb/harmonie___luma.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/harmonie___luma.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/ike.jpg -> dist/images/amiibo/ssb/ike.jpg
+Reading app/images/amiibo/ssb/ike.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/ike.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/kirby.jpg -> dist/images/amiibo/ssb/kirby.jpg
+Reading app/images/amiibo/ssb/kirby.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/kirby.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/link.jpg -> dist/images/amiibo/ssb/link.jpg
+Reading app/images/amiibo/ssb/link.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/link.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/link_cartoon.jpg -> dist/images/amiibo/ssb/link_cartoon.jpg
+Reading app/images/amiibo/ssb/link_cartoon.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/link_cartoon.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/little_mac.jpg -> dist/images/amiibo/ssb/little_mac.jpg
+Reading app/images/amiibo/ssb/little_mac.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/little_mac.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/lucario.jpg -> dist/images/amiibo/ssb/lucario.jpg
+Reading app/images/amiibo/ssb/lucario.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/lucario.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/lucina.jpg -> dist/images/amiibo/ssb/lucina.jpg
+Reading app/images/amiibo/ssb/lucina.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/lucina.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/luigi.jpg -> dist/images/amiibo/ssb/luigi.jpg
+Reading app/images/amiibo/ssb/luigi.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/luigi.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/mario.jpg -> dist/images/amiibo/ssb/mario.jpg
+Reading app/images/amiibo/ssb/mario.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/mario.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/marth.jpg -> dist/images/amiibo/ssb/marth.jpg
+Reading app/images/amiibo/ssb/marth.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/marth.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/megaman.jpg -> dist/images/amiibo/ssb/megaman.jpg
+Reading app/images/amiibo/ssb/megaman.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/megaman.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/meta_knight.jpg -> dist/images/amiibo/ssb/meta_knight.jpg
+Reading app/images/amiibo/ssb/meta_knight.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/meta_knight.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/mewtwo.jpg -> dist/images/amiibo/ssb/mewtwo.jpg
+Reading app/images/amiibo/ssb/mewtwo.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/mewtwo.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/mr__game___watch.jpg -> dist/images/amiibo/ssb/mr__game___watch.jpg
+Reading app/images/amiibo/ssb/mr__game___watch.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/mr__game___watch.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/ness.jpg -> dist/images/amiibo/ssb/ness.jpg
+Reading app/images/amiibo/ssb/ness.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/ness.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/olimar.jpg -> dist/images/amiibo/ssb/olimar.jpg
+Reading app/images/amiibo/ssb/olimar.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/olimar.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/pac_man.jpg -> dist/images/amiibo/ssb/pac_man.jpg
+Reading app/images/amiibo/ssb/pac_man.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/pac_man.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/palutena.jpg -> dist/images/amiibo/ssb/palutena.jpg
+Reading app/images/amiibo/ssb/palutena.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/palutena.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/peach.jpg -> dist/images/amiibo/ssb/peach.jpg
+Reading app/images/amiibo/ssb/peach.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/peach.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/pikachu.jpg -> dist/images/amiibo/ssb/pikachu.jpg
+Reading app/images/amiibo/ssb/pikachu.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/pikachu.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/pit.jpg -> dist/images/amiibo/ssb/pit.jpg
+Reading app/images/amiibo/ssb/pit.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/pit.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/pit_malefique.jpg -> dist/images/amiibo/ssb/pit_malefique.jpg
+Reading app/images/amiibo/ssb/pit_malefique.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/pit_malefique.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/r_o_b_.jpg -> dist/images/amiibo/ssb/r_o_b_.jpg
+Reading app/images/amiibo/ssb/r_o_b_.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/r_o_b_.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/roi_dadidou.jpg -> dist/images/amiibo/ssb/roi_dadidou.jpg
+Reading app/images/amiibo/ssb/roi_dadidou.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/roi_dadidou.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/rondoudou.jpg -> dist/images/amiibo/ssb/rondoudou.jpg
+Reading app/images/amiibo/ssb/rondoudou.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/rondoudou.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/samus.jpg -> dist/images/amiibo/ssb/samus.jpg
+Reading app/images/amiibo/ssb/samus.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/samus.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/samus_sans_armure.jpg -> dist/images/amiibo/ssb/samus_sans_armure.jpg
+Reading app/images/amiibo/ssb/samus_sans_armure.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/samus_sans_armure.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/sheik.jpg -> dist/images/amiibo/ssb/sheik.jpg
+Reading app/images/amiibo/ssb/sheik.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/sheik.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/shulk.jpg -> dist/images/amiibo/ssb/shulk.jpg
+Reading app/images/amiibo/ssb/shulk.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/shulk.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/sonic.jpg -> dist/images/amiibo/ssb/sonic.jpg
+Reading app/images/amiibo/ssb/sonic.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/sonic.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/tireuse_mii.jpg -> dist/images/amiibo/ssb/tireuse_mii.jpg
+Reading app/images/amiibo/ssb/tireuse_mii.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/tireuse_mii.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/villageois.jpg -> dist/images/amiibo/ssb/villageois.jpg
+Reading app/images/amiibo/ssb/villageois.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/villageois.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/wario.jpg -> dist/images/amiibo/ssb/wario.jpg
+Reading app/images/amiibo/ssb/wario.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/wario.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/yoshi.jpg -> dist/images/amiibo/ssb/yoshi.jpg
+Reading app/images/amiibo/ssb/yoshi.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/yoshi.jpg...[32mOK[39m
+Copying app/images/amiibo/ssb/zelda.jpg -> dist/images/amiibo/ssb/zelda.jpg
+Reading app/images/amiibo/ssb/zelda.jpg...[32mOK[39m
+Writing dist/images/amiibo/ssb/zelda.jpg...[32mOK[39m
+Copying app/images/amiibo/super_mario/bowser.jpg -> dist/images/amiibo/super_mario/bowser.jpg
+Reading app/images/amiibo/super_mario/bowser.jpg...[32mOK[39m
+Writing dist/images/amiibo/super_mario/bowser.jpg...[32mOK[39m
+Copying app/images/amiibo/super_mario/box/bowser.jpg -> dist/images/amiibo/super_mario/box/bowser.jpg
+Reading app/images/amiibo/super_mario/box/bowser.jpg...[32mOK[39m
+Writing dist/images/amiibo/super_mario/box/bowser.jpg...[32mOK[39m
+Copying app/images/amiibo/super_mario/box/luigi.jpg -> dist/images/amiibo/super_mario/box/luigi.jpg
+Reading app/images/amiibo/super_mario/box/luigi.jpg...[32mOK[39m
+Writing dist/images/amiibo/super_mario/box/luigi.jpg...[32mOK[39m
+Copying app/images/amiibo/super_mario/box/mario.jpg -> dist/images/amiibo/super_mario/box/mario.jpg
+Reading app/images/amiibo/super_mario/box/mario.jpg...[32mOK[39m
+Writing dist/images/amiibo/super_mario/box/mario.jpg...[32mOK[39m
+Copying app/images/amiibo/super_mario/box/peach.jpg -> dist/images/amiibo/super_mario/box/peach.jpg
+Reading app/images/amiibo/super_mario/box/peach.jpg...[32mOK[39m
+Writing dist/images/amiibo/super_mario/box/peach.jpg...[32mOK[39m
+Copying app/images/amiibo/super_mario/box/toad.jpg -> dist/images/amiibo/super_mario/box/toad.jpg
+Reading app/images/amiibo/super_mario/box/toad.jpg...[32mOK[39m
+Writing dist/images/amiibo/super_mario/box/toad.jpg...[32mOK[39m
+Copying app/images/amiibo/super_mario/box/yoshi.jpg -> dist/images/amiibo/super_mario/box/yoshi.jpg
+Reading app/images/amiibo/super_mario/box/yoshi.jpg...[32mOK[39m
+Writing dist/images/amiibo/super_mario/box/yoshi.jpg...[32mOK[39m
+Copying app/images/amiibo/super_mario/bundle/mario.jpg -> dist/images/amiibo/super_mario/bundle/mario.jpg
+Reading app/images/amiibo/super_mario/bundle/mario.jpg...[32mOK[39m
+Writing dist/images/amiibo/super_mario/bundle/mario.jpg...[32mOK[39m
+Copying app/images/amiibo/super_mario/luigi.jpg -> dist/images/amiibo/super_mario/luigi.jpg
+Reading app/images/amiibo/super_mario/luigi.jpg...[32mOK[39m
+Writing dist/images/amiibo/super_mario/luigi.jpg...[32mOK[39m
+Copying app/images/amiibo/super_mario/mario.jpg -> dist/images/amiibo/super_mario/mario.jpg
+Reading app/images/amiibo/super_mario/mario.jpg...[32mOK[39m
+Writing dist/images/amiibo/super_mario/mario.jpg...[32mOK[39m
+Copying app/images/amiibo/super_mario/peach.jpg -> dist/images/amiibo/super_mario/peach.jpg
+Reading app/images/amiibo/super_mario/peach.jpg...[32mOK[39m
+Writing dist/images/amiibo/super_mario/peach.jpg...[32mOK[39m
+Copying app/images/amiibo/super_mario/toad.jpg -> dist/images/amiibo/super_mario/toad.jpg
+Reading app/images/amiibo/super_mario/toad.jpg...[32mOK[39m
+Writing dist/images/amiibo/super_mario/toad.jpg...[32mOK[39m
+Copying app/images/amiibo/super_mario/yoshi.jpg -> dist/images/amiibo/super_mario/yoshi.jpg
+Reading app/images/amiibo/super_mario/yoshi.jpg...[32mOK[39m
+Writing dist/images/amiibo/super_mario/yoshi.jpg...[32mOK[39m
+Copying app/images/amiibo/yww/box/mega_yoshi_de_laine.jpg -> dist/images/amiibo/yww/box/mega_yoshi_de_laine.jpg
+Reading app/images/amiibo/yww/box/mega_yoshi_de_laine.jpg...[32mOK[39m
+Writing dist/images/amiibo/yww/box/mega_yoshi_de_laine.jpg...[32mOK[39m
+Copying app/images/amiibo/yww/box/yoshi_de_laine_bleu_ciel.jpg -> dist/images/amiibo/yww/box/yoshi_de_laine_bleu_ciel.jpg
+Reading app/images/amiibo/yww/box/yoshi_de_laine_bleu_ciel.jpg...[32mOK[39m
+Writing dist/images/amiibo/yww/box/yoshi_de_laine_bleu_ciel.jpg...[32mOK[39m
+Copying app/images/amiibo/yww/box/yoshi_de_laine_rose.jpg -> dist/images/amiibo/yww/box/yoshi_de_laine_rose.jpg
+Reading app/images/amiibo/yww/box/yoshi_de_laine_rose.jpg...[32mOK[39m
+Writing dist/images/amiibo/yww/box/yoshi_de_laine_rose.jpg...[32mOK[39m
+Copying app/images/amiibo/yww/box/yoshi_de_laine_vert.jpg -> dist/images/amiibo/yww/box/yoshi_de_laine_vert.jpg
+Reading app/images/amiibo/yww/box/yoshi_de_laine_vert.jpg...[32mOK[39m
+Writing dist/images/amiibo/yww/box/yoshi_de_laine_vert.jpg...[32mOK[39m
+Copying app/images/amiibo/yww/bundle/yoshi_de_laine_vert.png -> dist/images/amiibo/yww/bundle/yoshi_de_laine_vert.png
+Reading app/images/amiibo/yww/bundle/yoshi_de_laine_vert.png...[32mOK[39m
+Writing dist/images/amiibo/yww/bundle/yoshi_de_laine_vert.png...[32mOK[39m
+Copying app/images/amiibo/yww/extra/mega_yoshi_de_laine.jpg -> dist/images/amiibo/yww/extra/mega_yoshi_de_laine.jpg
+Reading app/images/amiibo/yww/extra/mega_yoshi_de_laine.jpg...[32mOK[39m
+Writing dist/images/amiibo/yww/extra/mega_yoshi_de_laine.jpg...[32mOK[39m
+Copying app/images/amiibo/yww/mega_yoshi_de_laine.jpg -> dist/images/amiibo/yww/mega_yoshi_de_laine.jpg
+Reading app/images/amiibo/yww/mega_yoshi_de_laine.jpg...[32mOK[39m
+Writing dist/images/amiibo/yww/mega_yoshi_de_laine.jpg...[32mOK[39m
+Copying app/images/amiibo/yww/yoshi_de_laine_bleu_ciel.jpg -> dist/images/amiibo/yww/yoshi_de_laine_bleu_ciel.jpg
+Reading app/images/amiibo/yww/yoshi_de_laine_bleu_ciel.jpg...[32mOK[39m
+Writing dist/images/amiibo/yww/yoshi_de_laine_bleu_ciel.jpg...[32mOK[39m
+Copying app/images/amiibo/yww/yoshi_de_laine_rose.jpg -> dist/images/amiibo/yww/yoshi_de_laine_rose.jpg
+Reading app/images/amiibo/yww/yoshi_de_laine_rose.jpg...[32mOK[39m
+Writing dist/images/amiibo/yww/yoshi_de_laine_rose.jpg...[32mOK[39m
+Copying app/images/amiibo/yww/yoshi_de_laine_vert.jpg -> dist/images/amiibo/yww/yoshi_de_laine_vert.jpg
+Reading app/images/amiibo/yww/yoshi_de_laine_vert.jpg...[32mOK[39m
+Writing dist/images/amiibo/yww/yoshi_de_laine_vert.jpg...[32mOK[39m
+Copying app/res/amiibo.json -> dist/res/amiibo.json
+Reading app/res/amiibo.json...[32mOK[39m
+Writing dist/res/amiibo.json...[32mOK[39m
+Copying bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.eot -> dist/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.eot
+Reading bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.eot...[32mOK[39m
+Writing dist/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.eot...[32mOK[39m
+Copying bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.svg -> dist/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.svg
+Reading bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.svg...[32mOK[39m
+Writing dist/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.svg...[32mOK[39m
+Copying bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf -> dist/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf
+Reading bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf...[32mOK[39m
+Writing dist/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf...[32mOK[39m
+Copying bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff -> dist/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff
+Reading bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff...[32mOK[39m
+Writing dist/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff...[32mOK[39m
+Copying bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2 -> dist/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2
+Reading bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2...[32mOK[39m
+Writing dist/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2...[32mOK[39m
+Copied 158 files
+
+[4mLoading "grunt-google-cdn" plugin[24m
+
+[1mRegistering "D:\wamp\www\amiiboList\node_modules\grunt-google-cdn\tasks" tasks.[22m
+Loading "cdnify.js" tasks...[32mOK[39m
++ [36mcdnify[39m
+
+[4mRunning "cdnify" task[24m
+
+[4mRunning "cdnify:dist" (cdnify) task[24m
+Verifying property [36mcdnify.dist[39m exists in config...[32mOK[39m
+File: [33m[no files][39m
+Reading bower.json...[32mOK[39m
+Parsing bower.json...[32mOK[39m
+Options: [36mcdn="google"[39m
+Going through [36mdist/404.html[39m, [36mdist/index.html[39m to update script refs
+Reading dist/404.html...[32mOK[39m
+Reading dist/index.html...[32mOK[39m
+✔ bower_components/angular-animate/angular-animate.js changed to //ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.2/angular-animate.min.js
+✔ bower_components/angular-aria/angular-aria.js changed to //ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.2/angular-aria.min.js
+✔ bower_components/angular-cookies/angular-cookies.js changed to //ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.2/angular-cookies.min.js
+✔ bower_components/angular-resource/angular-resource.js changed to //ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.2/angular-resource.min.js
+✔ bower_components/angular-route/angular-route.js changed to //ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.2/angular-route.min.js
+✔ bower_components/angular-sanitize/angular-sanitize.js changed to //ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.2/angular-sanitize.min.js
+✔ bower_components/angular-touch/angular-touch.js changed to //ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.2/angular-touch.min.js
+Writing dist/404.html...[32mOK[39m
+✔ bower_components/angular-animate/angular-animate.js changed to //ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.2/angular-animate.min.js
+✔ bower_components/angular-aria/angular-aria.js changed to //ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.2/angular-aria.min.js
+✔ bower_components/angular-cookies/angular-cookies.js changed to //ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.2/angular-cookies.min.js
+✔ bower_components/angular-resource/angular-resource.js changed to //ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.2/angular-resource.min.js
+✔ bower_components/angular-route/angular-route.js changed to //ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.2/angular-route.min.js
+✔ bower_components/angular-sanitize/angular-sanitize.js changed to //ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.2/angular-sanitize.min.js
+✔ bower_components/angular-touch/angular-touch.js changed to //ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.2/angular-touch.min.js
+Writing dist/index.html...[32mOK[39m
+
+[4mLoading "grunt-contrib-cssmin" plugin[24m
+
+[1mRegistering "D:\wamp\www\amiiboList\node_modules\grunt-contrib-cssmin\tasks" tasks.[22m
+Loading "cssmin.js" tasks...[32mOK[39m
++ [36mcssmin[39m
+
+[4mRunning "cssmin" task[24m
+
+[4mRunning "cssmin:generated" (cssmin) task[24m
+Verifying property [36mcssmin.generated[39m exists in config...[32mOK[39m
+Files: [33m[no src][39m -> [36mdist\styles\vendor.css[39m
+Files: [36mapp/styles/main.css[39m -> [36mdist\styles\main.css[39m
+Options: [36mrebase=false[39m, [36mreport="min"[39m, [36msourceMap=false[39m
+Writing dist\styles\vendor.css...[32mOK[39m
+File dist\styles\vendor.css created 0 B → 0 B
+Options: [36mrebase=false[39m, [36mreport="min"[39m, [36msourceMap=false[39m
+Reading app/styles/main.css...[32mOK[39m
+Writing dist\styles\main.css...[32mOK[39m
+File dist\styles\main.css created 160.46 kB → 120.63 kB
+[32m>> [39m2 files created. 160.46 kB → 120.63 kB
+
+[4mLoading "grunt-contrib-uglify" plugin[24m
+
+[1mRegistering "D:\wamp\www\amiiboList\node_modules\grunt-contrib-uglify\tasks" tasks.[22m
+Loading "uglify.js" tasks...[32mOK[39m
++ [36muglify[39m
+
+[4mRunning "uglify" task[24m
+
+[4mRunning "uglify:generated" (uglify) task[24m
+Verifying property [36muglify.generated[39m exists in config...[32mOK[39m
+Files: [36m.tmp/concat/scripts/vendor.js[39m -> [36mdist\scripts\vendor.js[39m
+Files: [36m.tmp/concat/scripts/scripts.js[39m -> [36mdist\scripts\scripts.js[39m
+Options: [36mbanner=""[39m, [36mfooter=""[39m, [36mcompress={"warnings":false}[39m, [36mmangle={}[39m, [36mbeautify=false[39m, [36mreport="min"[39m, [36mexpression=false[39m, [36mmaxLineLen=32000[39m, [36mASCIIOnly=false[39m
+Minifying with UglifyJS...Reading .tmp/concat/scripts/vendor.js...[32mOK[39m
+[32mOK[39m
+Writing dist\scripts\vendor.js...[32mOK[39m
+File dist\scripts\vendor.js created: 1.65 MB → 327.23 kB
+Minifying with UglifyJS...Reading .tmp/concat/scripts/scripts.js...[32mOK[39m
+[32mOK[39m
+Writing dist\scripts\scripts.js...[32mOK[39m
+File dist\scripts\scripts.js created: 5.81 kB → 3.59 kB
+[32m>> [39m2 files created.
+
+[4mLoading "grunt-filerev" plugin[24m
+
+[1mRegistering "D:\wamp\www\amiiboList\node_modules\grunt-filerev\tasks" tasks.[22m
+Loading "filerev.js" tasks...[32mOK[39m
++ [36mfilerev[39m
+
+[4mRunning "filerev" task[24m
+
+[4mRunning "filerev:dist" (filerev) task[24m
+Verifying property [36mfilerev.dist[39m exists in config...[32mOK[39m
+Files: [36mdist/scripts/scripts.js[39m, [36mdist/scripts/vendor.js[39m, [36mdist/styles/main.css[39m, [36mdist/styles/vendor.css[39m
+Options: [36malgorithm="md5"[39m, [36mlength=8[39m
+✔ dist/scripts/scripts.js changed to scripts.d8b6a0f4.js
+✔ dist/scripts/vendor.js changed to vendor.6062da33.js
+✔ dist/styles/main.css changed to main.523d8dee.css
+✔ dist/styles/vendor.css changed to vendor.d41d8cd9.css
+Revved 4 files
+
+[4mRunning "usemin" task[24m
+
+[4mRunning "usemin:html" (usemin) task[24m
+Verifying property [36musemin.html[39m exists in config...[32mOK[39m
+Files: [36mdist/404.html[39m, [36mdist/index.html[39m -> [36mhtml[39m
+Options: [36mtype="html"[39m, [36massetsDirs=["dist","dist/images","dist/styles"][39m, [36mpatterns={"js":[[{},"Replacing references to images"]]}[39m
+Processing as HTML - dist/404.html
+Update the HTML to reference our concat/min/revved script files
+Update the HTML with the new css filenames
+Update the HTML with the new img filenames
+Update the HTML with the new video filenames
+Update the HTML with the new poster filenames
+Update the HTML with the new source filenames
+Update the HTML with data-main tags
+Update the HTML with data-* tags
+Update the HTML with background imgs, case there is some inline style
+Update the HTML with anchors images
+Update the HTML with reference in input
+Update the HTML with the new img filenames in meta tags
+Update the HTML with the new object filenames
+Update the HTML with the new image filenames for svg xlink:href links
+Update the HTML with the new image filenames for src links
+Update the HTML with the new image filenames for srcset links
+Update the HTML within the <use> tag when referencing an external url with svg sprites as in svg4everybody
+Writing dist/404.html...[32mOK[39m
+Processing as HTML - dist/index.html
+Update the HTML to reference our concat/min/revved script files
+scripts/vendor.js changed to scripts/vendor.6062da33.js
+scripts/scripts.js changed to scripts/scripts.d8b6a0f4.js
+Update the HTML with the new css filenames
+styles/main.css changed to styles/main.523d8dee.css
+Update the HTML with the new img filenames
+Update the HTML with the new video filenames
+Update the HTML with the new poster filenames
+Update the HTML with the new source filenames
+Update the HTML with data-main tags
+Update the HTML with data-* tags
+Update the HTML with background imgs, case there is some inline style
+Update the HTML with anchors images
+Update the HTML with reference in input
+Update the HTML with the new img filenames in meta tags
+Update the HTML with the new object filenames
+Update the HTML with the new image filenames for svg xlink:href links
+Update the HTML with the new image filenames for src links
+Update the HTML with the new image filenames for srcset links
+Update the HTML within the <use> tag when referencing an external url with svg sprites as in svg4everybody
+Writing dist/index.html...[32mOK[39m
+Replaced 2 references to assets
+
+[4mRunning "usemin:css" (usemin) task[24m
+Verifying property [36musemin.css[39m exists in config...[32mOK[39m
+Files: [36mdist/styles/main.523d8dee.css[39m, [36mdist/styles/vendor.d41d8cd9.css[39m -> [36mcss[39m
+Options: [36mtype="css"[39m, [36massetsDirs=["dist","dist/images","dist/styles"][39m, [36mpatterns={"js":[[{},"Replacing references to images"]]}[39m
+Processing as CSS - dist/styles/main.523d8dee.css
+Update the CSS to reference our revved images
+Writing dist/styles/main.523d8dee.css...[32mOK[39m
+Processing as CSS - dist/styles/vendor.d41d8cd9.css
+Update the CSS to reference our revved images
+Writing dist/styles/vendor.d41d8cd9.css...[32mOK[39m
+Replaced 2 references to assets
+
+[4mRunning "usemin:js" (usemin) task[24m
+Verifying property [36musemin.js[39m exists in config...[32mOK[39m
+Files: [36mdist/scripts/scripts.d8b6a0f4.js[39m, [36mdist/scripts/vendor.6062da33.js[39m -> [36mjs[39m
+Options: [36mtype="js"[39m, [36massetsDirs=["dist","dist/images","dist/styles"][39m, [36mpatterns={"js":[[{},"Replacing references to images"]]}[39m
+Processing as JS - dist/scripts/scripts.d8b6a0f4.js
+Replacing references to images
+Writing dist/scripts/scripts.d8b6a0f4.js...[32mOK[39m
+Processing as JS - dist/scripts/vendor.6062da33.js
+Replacing references to images
+Writing dist/scripts/vendor.6062da33.js...[32mOK[39m
+Replaced 2 references to assets
+
+[4mLoading "grunt-contrib-htmlmin" plugin[24m
+
+[1mRegistering "D:\wamp\www\amiiboList\node_modules\grunt-contrib-htmlmin\tasks" tasks.[22m
+Loading "htmlmin.js" tasks...[32mOK[39m
++ [36mhtmlmin[39m
+
+[4mRunning "htmlmin" task[24m
+
+[4mRunning "htmlmin:dist" (htmlmin) task[24m
+Verifying property [36mhtmlmin.dist[39m exists in config...[32mOK[39m
+Files: [36mdist/404.html[39m -> [36mdist/404.html[39m
+Files: [36mdist/index.html[39m -> [36mdist/index.html[39m
+Options: [36mcollapseWhitespace[39m, [36mconservativeCollapse[39m, [36mcollapseBooleanAttributes[39m, [36mremoveCommentsFromCDATA[39m
+Reading dist/404.html...[32mOK[39m
+Writing dist/404.html...[32mOK[39m
+Minified dist/404.html 3.41 kB → 3.3 kB
+Reading dist/index.html...[32mOK[39m
+Writing dist/index.html...[32mOK[39m
+Minified dist/index.html 2.47 kB → 2.1 kB
+Minified 2 files
+
+[32mDone, without errors.[39m
+
+
+Execution Time (2015-08-29 08:57:21 UTC)
+loading tasks                    16ms  0%
+loading grunt-contrib-clean       0ms  0%
+clean:dist                       78ms  █ 1%
+loading grunt-wiredep             0ms  0%
+wiredep:app                     239ms  █ 2%
+wiredep:test                     15ms  0%
+wiredep:sass                     16ms  0%
+loading grunt-usemin             47ms  0%
+useminPrepare:html               15ms  0%
+loading grunt-concurrent         16ms  0%
+concurrent:dist                 860ms  ███ 8%
+loading grunt-autoprefixer      172ms  █ 2%
+autoprefixer:server               0ms  0%
+autoprefixer:dist                15ms  0%
+loading grunt-...lar-templates    0ms  0%
+ngtemplates:dist                125ms  █ 1%
+loading grunt-contrib-concat     31ms  0%
+concat:generated                 32ms  0%
+loading grunt-ng-annotate        78ms  █ 1%
+ngAnnotate:dist                 750ms  ██ 7%
+loading grunt-contrib-copy       15ms  0%
+copy:dist                        1.1s  ███ 10%
+loading grunt-google-cdn        613ms  ██ 6%
+cdnify:dist                      3.6s  ██████████ 33%
+loading grunt-contrib-cssmin     78ms  █ 1%
+cssmin:generated                297ms  █ 3%
+loading grunt-contrib-uglify    109ms  █ 1%
+uglify:generated                 2.6s  ███████ 24%
+loading grunt-filerev            16ms  0%
+filerev:dist                     15ms  0%
+usemin:html                       0ms  0%
+usemin:css                        0ms  0%
+usemin:js                        32ms  0%
+loading grunt-contrib-htmlmin    15ms  0%
+htmlmin:dist                     16ms  0%
+Total 10.9s
+
