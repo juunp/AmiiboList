@@ -10,7 +10,7 @@
   },
   "scripts": {
     "test": "grunt test",
-    "postinstall": "bower install && grunt build --verbose > grunt.log"
+    "postinstall": "bower install && grunt build:dist --verbose > grunt.log"
   },
   "dependencies": {
     "body-parser": "~1.5.2",
