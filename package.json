@@ -47,7 +47,7 @@
     "karma-jasmine": "*",
     "karma-phantomjs-launcher": "*",
     "method-override": "~2.1.2",
-    "mongoose": "~3.6.2",
+    "mongoose": "~5.7.7",
     "morgan": "~1.2.2",
     "time-grunt": "^1.0.0"
   }
